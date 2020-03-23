@@ -17,6 +17,18 @@ public class PlayerController : MonoBehaviour
     public float lowJumpMultiplier = 3f;
     public int numJumps = 2;
 
+    public float dashSpeed = 20;
+
+    [Space]
+    [Header("Booleans")]
+    public bool canMove;
+    public bool wallGrab;
+    public bool wallJumped;
+    public bool wallSlide;
+    public bool isDashing;
+
+    public bool hasDashed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +42,8 @@ public class PlayerController : MonoBehaviour
         //Movement
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
+        float xRaw = Input.GetAxisRaw("Horizontal");
+        float yRaw = Input.GetAxisRaw("Vertical");
         Vector2 dir = new Vector2(x, y);
         Walk(dir);
 
@@ -49,6 +63,12 @@ public class PlayerController : MonoBehaviour
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (xRaw != 0 || yRaw != 0)
+                Dash(xRaw, yRaw);
+        }
+
 
     }
 
@@ -65,11 +85,56 @@ public class PlayerController : MonoBehaviour
 
 
     }
+
+
+
+    private void Dash(float x, float y)
+    {
+
+
+        hasDashed = true;
+
+
+
+        rb.velocity = Vector2.zero;
+        Vector2 dir = new Vector2(x, y);
+
+        rb.velocity += dir.normalized * dashSpeed;
+        StartCoroutine(DashWait());
+    }
+
+    IEnumerator DashWait()
+    {
+
+        StartCoroutine(GroundDash());
+
+
+
+        rb.gravityScale = 0;
+
+        wallJumped = true;
+        isDashing = true;
+
+        yield return new WaitForSeconds(.3f);
+
+
+        rb.gravityScale = 3;
+
+        wallJumped = false;
+        isDashing = false;
+    }
+
+    IEnumerator GroundDash()
+    {
+        yield return new WaitForSeconds(.15f);
+
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Floor")
         {
             numJumps = 2;
+            rb.gravityScale = 1;
         }
     }
 }

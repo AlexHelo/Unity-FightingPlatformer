@@ -11,4 +11,13 @@ public class EnemyScript : MonoBehaviour
     {
         gameObject.transform.Translate(new Vector3(10f, 0, 0) * Time.deltaTime);
     }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag != "Wall")
+        {
+            Destroy(this.gameObject);
+        }
+
+    }
 }
