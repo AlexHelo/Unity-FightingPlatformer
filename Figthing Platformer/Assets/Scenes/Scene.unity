@@ -216,9 +216,9 @@ GameObject:
   - component: {fileID: 592658210}
   - component: {fileID: 592658209}
   - component: {fileID: 592658208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2595,7 +2595,7 @@ GameObject:
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &885486812
 Transform:
   m_ObjectHideFlags: 0
@@ -3341,6 +3341,7 @@ GameObject:
   - component: {fileID: 1681819645}
   - component: {fileID: 1681819644}
   - component: {fileID: 1681819643}
+  - component: {fileID: 1681819648}
   m_Layer: 0
   m_Name: MainPlayer
   m_TagString: Player
@@ -3360,6 +3361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216f69986e0b9ec40b5037e571390cae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coll: {fileID: 1681819648}
   moveSpeed: 5
   jumpVelocity: 6
   fallMultiplier: 4
@@ -3372,6 +3374,7 @@ MonoBehaviour:
   wallSlide: 0
   isDashing: 0
   hasDashed: 0
+  groundTouch: 0
 --- !u!212 &1681819644
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3412,7 +3415,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 963915ead2da2da4ca0513df478f19d6, type: 3}
-  m_Color: {r: 0.8784314, g: 0.121568635, b: 0.823724, a: 1}
+  m_Color: {r: 0.050729793, g: 0.09069848, b: 0.7169812, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3485,6 +3488,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1681819648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681819642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3844ee0456dc943b94ca34a298f376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  onGround: 0
+  onWall: 0
+  onRightWall: 0
+  onLeftWall: 0
+  wallSide: 0
+  sizeX: {x: 0, y: 0}
+  sizeY: {x: 0, y: 0}
+  sizeOffsetY: {x: 0, y: 0}
+  bottomOffset: {x: 0, y: -0.5}
+  rightOffset: {x: 0.5, y: 0.05}
+  leftOffset: {x: -0.5, y: 0.05}
 --- !u!1 &1757441584
 GameObject:
   m_ObjectHideFlags: 0
