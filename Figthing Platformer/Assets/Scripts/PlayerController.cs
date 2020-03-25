@@ -15,7 +15,9 @@ public class PlayerController : MonoBehaviour
     public float jumpVelocity = 10f;
     public float fallMultiplier = 4f;
     public float lowJumpMultiplier = 3f;
-    public int numJumps = 2;
+	public float slideDown = -5f;
+	public int numJumps = 2;
+	
 
     public float dashSpeed = 20;
 
@@ -65,11 +67,19 @@ public class PlayerController : MonoBehaviour
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && hasDashed == false)
+		if (Input.GetKeyDown(KeyCode.G))
+		{
+			slideDown = 0;
+		}
+		if (Input.GetKeyUp(KeyCode.G))
+		{
+			slideDown = -5;
+		}
+
+        if (Input.GetKeyDown(KeyCode.Space) && hasDashed == false && !coll.onGround)
         {
             if (xRaw != 0 || yRaw != 0)
                 Dash(xRaw, yRaw);
-
             numJumps = 0;
         }
 
@@ -78,7 +88,7 @@ public class PlayerController : MonoBehaviour
         {
             numJumps = 2;
             rb.gravityScale = 1;
-            hasDashed = true;
+            hasDashed = false;
         }
 
         if (!coll.onGround)
@@ -87,16 +97,21 @@ public class PlayerController : MonoBehaviour
             {
                 numJumps = 1;
             }
-            hasDashed = false;
+            
         }
+		if(coll.onWall && !coll.onGround)
+		{
+			rb.velocity = new Vector2(rb.velocity.x,slideDown);
+		}
+		
 
 
-
-    }
+	}
 
     private void Walk(Vector2 dir)
-    {
-        rb.velocity = new Vector2(dir.x * moveSpeed, rb.velocity.y);
+	{ 
+		rb.velocity = new Vector2(dir.x * moveSpeed, rb.velocity.y);
+
     }
 
     private void Jump(Vector2 dir)
