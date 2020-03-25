@@ -3396,8 +3396,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 963915ead2da2da4ca0513df478f19d6, type: 3}
-  m_Color: {r: 0.050729793, g: 0.09069848, b: 0.7169812, a: 1}
+  m_Sprite: {fileID: -3316437661583186769, guid: be97c591e4eadc041bb0446675a8d29f,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3420,18 +3421,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0053605437, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.1875, y: 1.8125}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.1822592, y: 1.814806}
   m_EdgeRadius: 0
 --- !u!50 &1681819646
 Rigidbody2D:
@@ -3492,11 +3493,9 @@ MonoBehaviour:
   wallSide: 0
   sizeX: {x: 0, y: 0}
   sizeY: {x: 0, y: 0}
-  sizeOffsetY: {x: 0, y: 0}
-  sizeOffsetX: {x: 0, y: 0}
-  bottomOffset: {x: 0, y: -0.5}
-  rightOffset: {x: 0.5, y: 0.15}
-  leftOffset: {x: -0.5, y: 0.15}
+  bottomOffset: {x: 0, y: -1}
+  rightOffset: {x: -0.5, y: 0}
+  leftOffset: {x: 0.5, y: 0}
 --- !u!1 &1757441584
 GameObject:
   m_ObjectHideFlags: 0

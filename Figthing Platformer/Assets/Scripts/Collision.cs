@@ -6,6 +6,7 @@ public class Collision : MonoBehaviour
 {
 
     public LayerMask groundLayer;
+    Renderer rend;
 
     public bool onGround;
     public bool onWall;
@@ -15,17 +16,19 @@ public class Collision : MonoBehaviour
 
     public Vector2 sizeX;
     public Vector2 sizeY;
-    public Vector2 sizeOffsetY;
-    public Vector2 sizeOffsetX;
+    private Vector2 sizeOffsetY;
+    private Vector2 sizeOffsetX;
     public Vector2 bottomOffset, rightOffset, leftOffset;
     private Color debugCollisionColor = Color.red;
 
     // Start is called before the first frame update
     void Start()
     {
-        sizeOffsetY = new Vector2(0.2f, transform.localScale.y);
+        rend = GetComponent<Renderer>();
+
+        sizeOffsetY = new Vector2(0.2f, rend.bounds.size.y);
         sizeOffsetY.y -= 0.3f;
-        sizeOffsetX = new Vector2(transform.localScale.x, 0.2f);
+        sizeOffsetX = new Vector2(rend.bounds.size.x, 0.2f);
         sizeOffsetX.x -= 0.3f;
         sizeX = new Vector2(sizeOffsetX.x, 0.2f);
         sizeY = new Vector2(0.2f, sizeOffsetY.y);
