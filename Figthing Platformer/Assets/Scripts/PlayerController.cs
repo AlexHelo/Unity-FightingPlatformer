@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerController : MonoBehaviour
 {
 
     SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
+	public Collision coll;
 
 
-    [Space]
-    [Header("Stats")]
     public float moveSpeed = 5.0f;
     public float jumpVelocity = 10f;
     public float fallMultiplier = 4f;
@@ -19,8 +19,7 @@ public class PlayerController : MonoBehaviour
 
     public float dashSpeed = 20;
 
-    [Space]
-    [Header("Booleans")]
+   
     public bool canMove;
     public bool wallGrab;
     public bool wallJumped;
@@ -28,6 +27,10 @@ public class PlayerController : MonoBehaviour
     public bool isDashing;
 
     public bool hasDashed;
+
+	public bool groundTouch;
+
+	
 
     // Start is called before the first frame update
     void Start()
@@ -50,7 +53,6 @@ public class PlayerController : MonoBehaviour
         //Better Jumping
         if (Input.GetKeyDown(KeyCode.W) && numJumps > 0)
         {
-
             Jump(Vector2.up);
             numJumps--;
         }
@@ -69,8 +71,29 @@ public class PlayerController : MonoBehaviour
                 Dash(xRaw, yRaw);
         }
 
+		// jump reset
+		if (coll.onGround && !groundTouch)
+		{
+			Debug.Log("ground");
+			GroundTouch();
+			groundTouch = true;
+		}
 
-    }
+		if (!coll.onGround && groundTouch)
+		{
+			Debug.Log("air");
+			groundTouch = false;
+		}
+		void GroundTouch()
+		{
+			Debug.Log("groundTouch Method");
+			hasDashed = false;
+			isDashing = false;
+			numJumps = 2;
+
+		}
+
+	}
 
     private void Walk(Vector2 dir)
     {
@@ -79,10 +102,8 @@ public class PlayerController : MonoBehaviour
 
     private void Jump(Vector2 dir)
     {
-
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.velocity += dir * jumpVelocity;
-
 
     }
 
@@ -90,11 +111,7 @@ public class PlayerController : MonoBehaviour
 
     private void Dash(float x, float y)
     {
-
-
         hasDashed = true;
-
-
 
         rb.velocity = Vector2.zero;
         Vector2 dir = new Vector2(x, y);
@@ -107,9 +124,6 @@ public class PlayerController : MonoBehaviour
     {
 
         StartCoroutine(GroundDash());
-
-
-
         rb.gravityScale = 0;
 
         wallJumped = true;
