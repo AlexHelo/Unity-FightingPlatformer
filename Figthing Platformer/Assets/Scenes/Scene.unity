@@ -2648,9 +2648,9 @@ GameObject:
   - component: {fileID: 1010063334}
   - component: {fileID: 1010063333}
   - component: {fileID: 1010063332}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DeadZone
-  m_TagString: DeadZone
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3511,9 +3511,10 @@ MonoBehaviour:
   sizeX: {x: 0, y: 0}
   sizeY: {x: 0, y: 0}
   sizeOffsetY: {x: 0, y: 0}
+  sizeOffsetX: {x: 0, y: 0}
   bottomOffset: {x: 0, y: -0.5}
-  rightOffset: {x: 0.5, y: 0.05}
-  leftOffset: {x: -0.5, y: 0.05}
+  rightOffset: {x: 0.5, y: 0.15}
+  leftOffset: {x: -0.5, y: 0.15}
 --- !u!1 &1757441584
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 
     SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
-	public Collision coll;
+    public Collision coll;
 
 
     public float moveSpeed = 5.0f;
@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
 
     public float dashSpeed = 20;
 
-   
+
     public bool canMove;
     public bool wallGrab;
     public bool wallJumped;
@@ -28,9 +28,9 @@ public class PlayerController : MonoBehaviour
 
     public bool hasDashed;
 
-	public bool groundTouch;
+    public bool groundTouch;
 
-	
+
 
     // Start is called before the first frame update
     void Start()
@@ -65,35 +65,34 @@ public class PlayerController : MonoBehaviour
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && hasDashed == false)
         {
             if (xRaw != 0 || yRaw != 0)
                 Dash(xRaw, yRaw);
+
+            numJumps = 0;
         }
 
-		// jump reset
-		if (coll.onGround && !groundTouch)
-		{
-			Debug.Log("ground");
-			GroundTouch();
-			groundTouch = true;
-		}
+        // jump reset
+        if (coll.onGround)
+        {
+            numJumps = 2;
+            rb.gravityScale = 1;
+            hasDashed = true;
+        }
 
-		if (!coll.onGround && groundTouch)
-		{
-			Debug.Log("air");
-			groundTouch = false;
-		}
-		void GroundTouch()
-		{
-			Debug.Log("groundTouch Method");
-			hasDashed = false;
-			isDashing = false;
-			numJumps = 2;
+        if (!coll.onGround)
+        {
+            if (numJumps == 2)
+            {
+                numJumps = 1;
+            }
+            hasDashed = false;
+        }
 
-		}
 
-	}
+
+    }
 
     private void Walk(Vector2 dir)
     {
@@ -143,12 +142,10 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(.15f);
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    void OnCollisionEnter2D(Collision2D col)
     {
-        if (collision.gameObject.tag == "Floor")
-        {
-            numJumps = 2;
-            rb.gravityScale = 1;
-        }
+        if (col.gameObject.layer == 9)
+            gameObject.transform.position = new Vector3(0f, -1.485f, 0f);
     }
 }
