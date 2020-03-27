@@ -12,13 +12,14 @@ public class PlayerController : MonoBehaviour
 
 
     public float moveSpeed = 5.0f;
+    public float distance = 1f;
     public float jumpVelocity = 10f;
     public float fallMultiplier = 4f;
     public float lowJumpMultiplier = 3f;
     public float slideDown = -5f;
     public int numJumps = 2;
     public float jumpPushForce = 10f;
-
+    public int side = 1;
 
     public float dashSpeed = 20;
 
@@ -50,6 +51,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+        RaycastHit2D hit = Physics2D.Raycast(transform.position,Vector2.right*transform.localScale.x,distance);
+
         //Movement
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
@@ -66,6 +70,14 @@ public class PlayerController : MonoBehaviour
             Jump(Vector2.up);
             numJumps--;
         }
+
+         if(coll.onWall && !coll.onGround){
+             WallJump();
+         }
+
+
+
+
         if (rb.velocity.y < 0)
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
@@ -162,6 +174,13 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    IEnumerator DisableMovement(float time)
+    {
+        canMove = false;
+        yield return new WaitForSeconds(time);
+        canMove = true;
+    }
+
     private void Jump(Vector2 dir)
     {
         rb.velocity = new Vector2(rb.velocity.x, 0);
@@ -171,7 +190,19 @@ public class PlayerController : MonoBehaviour
 
     private void WallJump()
     {
+        if ((side == 1 && coll.onRightWall) || side == -1 && !coll.onRightWall)
+        {
+            side *= -1;
+        }
 
+        StopCoroutine(DisableMovement(0));
+        StartCoroutine(DisableMovement(.1f));
+
+        Vector2 wallDir = coll.onRightWall ? Vector2.left : Vector2.right;
+
+        Jump((Vector2.up / 1.5f + wallDir / 1.5f));
+
+        wallJumped = true;
     }
 
 
