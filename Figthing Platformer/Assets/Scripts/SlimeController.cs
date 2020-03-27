@@ -24,15 +24,12 @@ public class SlimeController : MonoBehaviour
 
 		if (coll.onLeftWall && spriteRenderer.flipX == true)
 		{
-			Debug.Log("cum1");
 			moveSpeed = moveSpeed* -1;
 			StartCoroutine(MoveWait(0.2f));
 			spriteRenderer.flipX = false;
 		}
 		if(coll.onRightWall && spriteRenderer.flipX == false)
 		{
-			Debug.Log("cum2");
-			
 			moveSpeed = moveSpeed * -1;
 			StartCoroutine(MoveWait(0.2f));
 			spriteRenderer.flipX = true;
