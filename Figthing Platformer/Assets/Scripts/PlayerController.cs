@@ -17,9 +17,10 @@ public class PlayerController : MonoBehaviour
     public float lowJumpMultiplier = 3f;
 	public float slideDown = -5f;
 	public int numJumps = 2;
-	
+	public float jumpPushForce = 10f;
 
-    public float dashSpeed = 20;
+
+	public float dashSpeed = 20;
 
 
     public bool canMove;
@@ -27,8 +28,9 @@ public class PlayerController : MonoBehaviour
     public bool wallJumped;
     public bool wallSlide;
     public bool isDashing;
+	public bool facingRight;
 
-    public bool hasDashed;
+	public bool hasDashed;
 
     public bool groundTouch;
 
@@ -79,17 +81,20 @@ public class PlayerController : MonoBehaviour
 		if (Input.GetKeyUp(KeyCode.G))
 		{
 			slideDown = -5;
+			
 		}
 
         if (Input.GetKeyDown(KeyCode.Space) && hasDashed == false && !coll.onGround)
         {
             if (xRaw != 0 || yRaw != 0)
                 Dash(xRaw, yRaw);
-            numJumps = 0;
+				 numJumps = 0;
         }
 
-        // jump reset
-        if (coll.onGround)
+		//walljump tryouts 
+	
+		// jump reset
+		if (coll.onGround)
         {
             an.SetBool("Jumping", false);
             an.SetBool("Falling", false);
@@ -128,7 +133,6 @@ public class PlayerController : MonoBehaviour
 		{
 			rb.velocity = new Vector2(rb.velocity.x,slideDown);
 		}
-		
 
 
 	}
@@ -156,12 +160,9 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Jump(Vector2 dir)
-    {
-        
+    {  
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.velocity += dir * jumpVelocity;
-        
-
 
     }
 
@@ -207,4 +208,5 @@ public class PlayerController : MonoBehaviour
         if (col.gameObject.layer == 9)
             gameObject.transform.position = new Vector3(0f, -1.485f, 0f);
     }
+
 }
