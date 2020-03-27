@@ -77,9 +77,6 @@ public class PlayerController : MonoBehaviour
              WallJump();
          }
 
-
-
-
         if (rb.velocity.y < 0)
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;

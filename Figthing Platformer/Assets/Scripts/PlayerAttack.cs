@@ -41,7 +41,7 @@ public class PlayerAttack : MonoBehaviour
         {
             timeResetAttack -= Time.deltaTime;
         }
-        Debug.Log(timeResetAttack);
+       
 
     }
     private void FixedUpdate()
