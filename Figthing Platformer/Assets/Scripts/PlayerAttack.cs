@@ -6,7 +6,7 @@ public class PlayerAttack : MonoBehaviour
 {
 
     private float timeBtWAttack,timeResetAttack;
-    public float startTimeBtwAttack;
+    public float startTimeBtwAttack,startTimeResetAttack;
     private bool Pressed = false;
 
     public Transform attackPos;
@@ -18,6 +18,7 @@ public class PlayerAttack : MonoBehaviour
     public float damage;
     private Rigidbody2D rigidbody;
     private int attackNum;
+    private bool startTimer=false;
 
     void Start()
     {
@@ -25,6 +26,7 @@ public class PlayerAttack : MonoBehaviour
         //ParticleSystem parts = particles.GetComponent<ParticleSystem>();
         //totalDuration = parts.duration + parts.startLifetime;
         rigidbody = GetComponent<Rigidbody2D>();
+        
     }
 
 
@@ -35,12 +37,30 @@ public class PlayerAttack : MonoBehaviour
         {
             timeBtWAttack -= Time.deltaTime;
         }
+        if (timeResetAttack >= 0  && startTimer)
+        {
+            timeResetAttack -= Time.deltaTime;
+        }
+        Debug.Log(timeResetAttack);
 
+    }
+    private void FixedUpdate()
+    {
+        if (timeResetAttack <= 0)
+        {
+            ResetCooldown();
+        }
     }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPos.position, attackRange);
+    }
+    private void ResetCooldown()
+    {
+        startTimer = true;
+        attackNum = 0;
+        an.SetInteger("AttackNo", attackNum);
     }
     public void Attack()
     {
@@ -56,36 +76,47 @@ public class PlayerAttack : MonoBehaviour
             {
                 Pressed = false;
                 an.SetBool("Attacking", true);
-                attackNum += 1;
                 
-                if (attackNum == 1)
+                if (timeResetAttack <= startTimeResetAttack)
                 {
-                    an.SetInteger("AttackNo",1);
-                    rigidbody.velocity = new Vector2(0f, 0f);
-                    enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+                    attackNum += 1;
 
-                    Vector3 displacement = new Vector3(-1.2f,0,0);
-                    enemiesToDamage1= Physics2D.OverlapCircleAll(attackPos.position-displacement, attackRange-.5f, whatIsEnemies);
+                    if (attackNum == 1)
+                    {
+                        an.SetInteger("AttackNo", attackNum);
+                        rigidbody.velocity = new Vector2(0f, 0f);
+                        enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+
+                        Vector3 displacement = new Vector3(-1.2f, 0, 0);
+                        enemiesToDamage1 = Physics2D.OverlapCircleAll(attackPos.position - displacement, attackRange - .5f, whatIsEnemies);
+                    }
+                    if (attackNum == 2)
+                    {
+                        an.SetInteger("AttackNo", attackNum);
+                        rigidbody.velocity = new Vector2(0f, 0f);
+                        enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+
+                        Vector3 displacement = new Vector3(-1.2f, 0, 0);
+                        enemiesToDamage1 = Physics2D.OverlapCircleAll(attackPos.position - displacement, attackRange - .5f, whatIsEnemies);
+                    }
+                    if (attackNum == 3)
+                    {
+                        an.SetInteger("AttackNo", attackNum);
+
+                        rigidbody.velocity = new Vector2(0f, 0f);
+                        enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+
+                        Vector3 displacement = new Vector3(-1.2f, 0, 0);
+                        enemiesToDamage1 = Physics2D.OverlapCircleAll(attackPos.position - displacement, attackRange - .5f, whatIsEnemies);
+                        
+                    }
+                    
+                    timeResetAttack = startTimeResetAttack;
                 }
-                if (attackNum == 2)
+                /*else
                 {
-                    an.SetInteger("AttackNo", 2);
-                    rigidbody.velocity = new Vector2(0f, 0f);
-                    enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
-
-                    Vector3 displacement = new Vector3(-1.2f, 0, 0);
-                    enemiesToDamage1 = Physics2D.OverlapCircleAll(attackPos.position - displacement, attackRange - .5f, whatIsEnemies);
-                }
-                if (attackNum == 3)
-                {
-                    an.SetInteger("AttackNo", 3);
-                    rigidbody.velocity = new Vector2(0f, 0f);
-                    enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
-
-                    Vector3 displacement = new Vector3(-1.2f, 0, 0);
-                    enemiesToDamage1 = Physics2D.OverlapCircleAll(attackPos.position - displacement, attackRange - .5f, whatIsEnemies);
-                }
-
+                    ResetCooldown();
+                }*/
 
                 if (enemiesToDamage != null)
                 {
@@ -138,11 +169,9 @@ public class PlayerAttack : MonoBehaviour
 
             }
             timeBtWAttack = startTimeBtwAttack;
+            
         }
 
     }
-    private void ResetCooldown()
-    {
-
-    }
+    
 }

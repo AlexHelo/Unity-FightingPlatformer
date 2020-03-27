@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
     public bool groundTouch;
 
     private Animator an;
+    private PlayerAttack plA;
 
 
 
@@ -46,6 +47,7 @@ public class PlayerController : MonoBehaviour
         an = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        plA = GetComponent<PlayerAttack>();
     }
 
     // Update is called once per frame
@@ -149,9 +151,16 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, slideDown);
         }
 
-
+        AttackCheck();
     }
 
+    private void AttackCheck()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            plA.Attack();
+        }
+    }
     private void Walk(Vector2 dir)
     {
         rb.velocity = new Vector2(dir.x * moveSpeed, rb.velocity.y);

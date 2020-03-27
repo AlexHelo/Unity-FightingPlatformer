@@ -3667,12 +3667,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coll: {fileID: 1681819648}
   moveSpeed: 5
+  distance: 1
   jumpVelocity: 6
   fallMultiplier: 4
   lowJumpMultiplier: 3
   slideDown: -7
   numJumps: 2
   jumpPushForce: 10
+  side: 1
   dashSpeed: 10
   canMove: 1
   wallGrab: 0
@@ -3852,7 +3854,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47433d481463bee4b95fc062997fe819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeBtwAttack: 1.5
+  startTimeBtwAttack: 0.3
+  startTimeResetAttack: 0.6
   attackPos: {fileID: 963832289}
   attackRange: 1
   attackRange2: 1
