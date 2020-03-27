@@ -32,11 +32,14 @@ public class PlayerController : MonoBehaviour
 
     public bool groundTouch;
 
+    private Animator an;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
+        an = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
     }
@@ -51,10 +54,12 @@ public class PlayerController : MonoBehaviour
         float yRaw = Input.GetAxisRaw("Vertical");
         Vector2 dir = new Vector2(x, y);
         Walk(dir);
+        
 
         //Better Jumping
         if (Input.GetKeyDown(KeyCode.W) && numJumps > 0)
         {
+            an.SetInteger("JumpNo",numJumps);
             Jump(Vector2.up);
             numJumps--;
         }
@@ -86,18 +91,38 @@ public class PlayerController : MonoBehaviour
         // jump reset
         if (coll.onGround)
         {
+            an.SetBool("Jumping", false);
+            an.SetBool("Falling", false);
             numJumps = 2;
             rb.gravityScale = 1;
             hasDashed = false;
         }
-
+        if (!coll.onGround && rb.velocity.y < 0)
+        {
+            an.SetBool("Falling", true);
+        }
         if (!coll.onGround)
         {
+            an.SetBool("Jumping", true);
+            an.SetInteger("JumpNo", numJumps);
+
             if (numJumps == 2)
             {
                 numJumps = 1;
+
             }
-            
+            if (numJumps == 1)
+            {
+                //an.SetBool("Falling", false);
+                an.SetBool("DoubleJump", true);
+                
+            }
+            if (numJumps == 0)
+            {
+                an.SetBool("DoubleJump", false);
+                
+            }
+
         }
 		if(coll.onWall && !coll.onGround)
 		{
@@ -111,13 +136,32 @@ public class PlayerController : MonoBehaviour
     private void Walk(Vector2 dir)
 	{ 
 		rb.velocity = new Vector2(dir.x * moveSpeed, rb.velocity.y);
+        if (dir.x != 0)
+        {
+            an.SetBool("Running", true);
+        }
+        else
+        {
+            an.SetBool("Running", false);
+        }
+        if (dir.x < 0)
+        {
+            spriteRenderer.flipX=true;
+        }
+        else if (dir.x > 0)
+            {
+                spriteRenderer.flipX = false;
+            } 
 
     }
 
     private void Jump(Vector2 dir)
     {
+        
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.velocity += dir * jumpVelocity;
+        
+
 
     }
 
