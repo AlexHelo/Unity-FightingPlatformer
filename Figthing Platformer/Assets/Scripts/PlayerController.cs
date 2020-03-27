@@ -15,12 +15,12 @@ public class PlayerController : MonoBehaviour
     public float jumpVelocity = 10f;
     public float fallMultiplier = 4f;
     public float lowJumpMultiplier = 3f;
-	public float slideDown = -5f;
-	public int numJumps = 2;
-	public float jumpPushForce = 10f;
+    public float slideDown = -5f;
+    public int numJumps = 2;
+    public float jumpPushForce = 10f;
 
 
-	public float dashSpeed = 20;
+    public float dashSpeed = 20;
 
 
     public bool canMove;
@@ -28,9 +28,10 @@ public class PlayerController : MonoBehaviour
     public bool wallJumped;
     public bool wallSlide;
     public bool isDashing;
-	public bool facingRight;
 
-	public bool hasDashed;
+
+
+    public bool hasDashed;
 
     public bool groundTouch;
 
@@ -56,12 +57,12 @@ public class PlayerController : MonoBehaviour
         float yRaw = Input.GetAxisRaw("Vertical");
         Vector2 dir = new Vector2(x, y);
         Walk(dir);
-        
+
 
         //Better Jumping
         if (Input.GetKeyDown(KeyCode.W) && numJumps > 0)
         {
-            an.SetInteger("JumpNo",numJumps);
+            an.SetInteger("JumpNo", numJumps);
             Jump(Vector2.up);
             numJumps--;
         }
@@ -74,27 +75,24 @@ public class PlayerController : MonoBehaviour
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
 
-		if (Input.GetKeyDown(KeyCode.G))
-		{
-			slideDown = 0;
-		}
-		if (Input.GetKeyUp(KeyCode.G))
-		{
-			slideDown = -5;
-			
-		}
+        if (Input.GetKeyDown(KeyCode.G) && !coll.onGround)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+        }
+
+
 
         if (Input.GetKeyDown(KeyCode.Space) && hasDashed == false && !coll.onGround)
         {
             if (xRaw != 0 || yRaw != 0)
                 Dash(xRaw, yRaw);
-				 numJumps = 0;
+            numJumps = 0;
         }
 
-		//walljump tryouts 
-	
-		// jump reset
-		if (coll.onGround)
+        //walljump tryouts 
+
+        // jump reset
+        if (coll.onGround)
         {
             an.SetBool("Jumping", false);
             an.SetBool("Falling", false);
@@ -102,10 +100,12 @@ public class PlayerController : MonoBehaviour
             rb.gravityScale = 1;
             hasDashed = false;
         }
+
         if (!coll.onGround && rb.velocity.y < 0)
         {
             an.SetBool("Falling", true);
         }
+
         if (!coll.onGround)
         {
             an.SetBool("Jumping", true);
@@ -116,30 +116,33 @@ public class PlayerController : MonoBehaviour
                 numJumps = 1;
 
             }
+
             if (numJumps == 1)
             {
                 //an.SetBool("Falling", false);
                 an.SetBool("DoubleJump", true);
-                
+
             }
+
             if (numJumps == 0)
             {
                 an.SetBool("DoubleJump", false);
-                
+
             }
 
         }
-		if(coll.onWall && !coll.onGround)
-		{
-			rb.velocity = new Vector2(rb.velocity.x,slideDown);
-		}
+
+        if (coll.onWall && !coll.onGround)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, slideDown);
+        }
 
 
-	}
+    }
 
     private void Walk(Vector2 dir)
-	{ 
-		rb.velocity = new Vector2(dir.x * moveSpeed, rb.velocity.y);
+    {
+        rb.velocity = new Vector2(dir.x * moveSpeed, rb.velocity.y);
         if (dir.x != 0)
         {
             an.SetBool("Running", true);
@@ -150,19 +153,24 @@ public class PlayerController : MonoBehaviour
         }
         if (dir.x < 0)
         {
-            spriteRenderer.flipX=true;
+            spriteRenderer.flipX = true;
         }
         else if (dir.x > 0)
-            {
-                spriteRenderer.flipX = false;
-            } 
+        {
+            spriteRenderer.flipX = false;
+        }
 
     }
 
     private void Jump(Vector2 dir)
-    {  
+    {
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.velocity += dir * jumpVelocity;
+
+    }
+
+    private void WallJump()
+    {
 
     }
 
