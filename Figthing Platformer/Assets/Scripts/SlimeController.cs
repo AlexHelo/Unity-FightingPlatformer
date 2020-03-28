@@ -23,13 +23,13 @@ public class SlimeController : MonoBehaviour
         //rb.velocity = Vector3.right * moveSpeed * Time.deltaTime;
         transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
 
-		if (coll.onLeftWall && spriteRenderer.flipX == true)
+		if ((coll.onLeftWall && spriteRenderer.flipX == true) || (!coll.onGroundL && spriteRenderer.flipX == true))
 		{
 			moveSpeed = moveSpeed* -1;
 			StartCoroutine(MoveWait(0.2f));
 			spriteRenderer.flipX = false;
 		}
-		if(coll.onRightWall && spriteRenderer.flipX == false)
+		if((coll.onRightWall && spriteRenderer.flipX == false) || (!coll.onGroundR && spriteRenderer.flipX == false))
 		{
 			moveSpeed = moveSpeed * -1;
 			StartCoroutine(MoveWait(0.2f));

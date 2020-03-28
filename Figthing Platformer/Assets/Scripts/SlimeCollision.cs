@@ -29,8 +29,8 @@ public class SlimeCollision : MonoBehaviour
 		sizeOffsetY = new Vector2(0.2f, rend.bounds.size.y);
 		sizeOffsetY.y -= 0.3f;
 		sizeOffsetX = new Vector2(rend.bounds.size.x, 0.1f);
-		sizeOffsetX.x -= 0.3f;
-		sizeX = new Vector2(sizeOffsetX.x, 0.1f);
+		sizeOffsetX.x -= 0.1f;
+		sizeX = new Vector2(0.5f, 0.1f);
 		sizeY = new Vector2(0.1f, sizeOffsetY.y);
 	}
 
