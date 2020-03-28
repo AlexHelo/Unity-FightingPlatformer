@@ -74,11 +74,14 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && numJumps > 0)
         {
             an.SetInteger("JumpNo", numJumps);
+            
             Jump(Vector2.up);
+
             numJumps--;
         }
+       
 
-         if(coll.onWall && !coll.onGround){
+        if (coll.onWall && !coll.onGround){
              WallJump();
          }
 
@@ -112,7 +115,9 @@ public class PlayerController : MonoBehaviour
         {
             an.SetBool("Jumping", false);
             an.SetBool("Falling", false);
+            an.SetBool("DoubleJump", true);
             numJumps = 2;
+            an.SetInteger("JumpNo", numJumps);
             rb.gravityScale = 1;
             hasDashed = false;
         }
@@ -121,10 +126,15 @@ public class PlayerController : MonoBehaviour
         {
             an.SetBool("Falling", true);
         }
+        else
+        {
+            an.SetBool("Falling", false);
+        }
 
         if (!coll.onGround)
         {
             an.SetBool("Jumping", true);
+            an.SetBool("DoubleJump", true);
             an.SetInteger("JumpNo", numJumps);
 
             if (numJumps == 2)

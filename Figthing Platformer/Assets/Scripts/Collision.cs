@@ -26,12 +26,12 @@ public class Collision : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
 
-        sizeOffsetY = new Vector2(0.2f, rend.bounds.size.y);
+        /*sizeOffsetY = new Vector2(0.2f, rend.bounds.size.y);
         sizeOffsetY.y -= 0.3f;
         sizeOffsetX = new Vector2(rend.bounds.size.x, 0.2f);
         sizeOffsetX.x -= 0.3f;
         sizeX = new Vector2(sizeOffsetX.x, 0.2f);
-        sizeY = new Vector2(0.2f, sizeOffsetY.y);
+        sizeY = new Vector2(0.2f, sizeOffsetY.y);*/
     }
 
     // Update is called once per frame
