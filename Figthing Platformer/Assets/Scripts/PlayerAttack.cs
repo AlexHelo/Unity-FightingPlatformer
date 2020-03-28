@@ -19,14 +19,15 @@ public class PlayerAttack : MonoBehaviour
     private Rigidbody2D rigidbody;
     private int attackNum;
     private bool startTimer=false;
-
+    private PlayerController pC;
+    private float force;
     void Start()
     {
         an = GetComponent<Animator>();
         //ParticleSystem parts = particles.GetComponent<ParticleSystem>();
         //totalDuration = parts.duration + parts.startLifetime;
         rigidbody = GetComponent<Rigidbody2D>();
-        
+        pC = GetComponent<PlayerController>();
     }
 
 
@@ -50,6 +51,7 @@ public class PlayerAttack : MonoBehaviour
         {
             ResetCooldown();
         }
+        attackPos = pC.GetCurrentAttackPos().GetComponent<Transform>();
     }
     private void OnDrawGizmosSelected()
     {
@@ -60,6 +62,7 @@ public class PlayerAttack : MonoBehaviour
     {
         startTimer = true;
         attackNum = 0;
+        //force = 0;
         an.SetInteger("AttackNo", attackNum);
     }
     public void Attack()
@@ -86,6 +89,8 @@ public class PlayerAttack : MonoBehaviour
                         an.SetInteger("AttackNo", attackNum);
                         rigidbody.velocity = new Vector2(0f, 0f);
                         enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+                        
+                        force = 5f;
 
                         Vector3 displacement = new Vector3(-1.2f, 0, 0);
                         enemiesToDamage1 = Physics2D.OverlapCircleAll(attackPos.position - displacement, attackRange - .5f, whatIsEnemies);
@@ -94,17 +99,22 @@ public class PlayerAttack : MonoBehaviour
                     {
                         an.SetInteger("AttackNo", attackNum);
                         rigidbody.velocity = new Vector2(0f, 0f);
-                        enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+                        enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange2, whatIsEnemies);
+
+                        force = 15f;
 
                         Vector3 displacement = new Vector3(-1.2f, 0, 0);
                         enemiesToDamage1 = Physics2D.OverlapCircleAll(attackPos.position - displacement, attackRange - .5f, whatIsEnemies);
                     }
                     if (attackNum == 3)
                     {
+                        
                         an.SetInteger("AttackNo", attackNum);
 
                         rigidbody.velocity = new Vector2(0f, 0f);
-                        enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+                        enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange3, whatIsEnemies);
+
+                        force = 22f;
 
                         Vector3 displacement = new Vector3(-1.2f, 0, 0);
                         enemiesToDamage1 = Physics2D.OverlapCircleAll(attackPos.position - displacement, attackRange - .5f, whatIsEnemies);
@@ -113,24 +123,28 @@ public class PlayerAttack : MonoBehaviour
                     
                     timeResetAttack = startTimeResetAttack;
                 }
-                /*else
-                {
-                    ResetCooldown();
-                }*/
+
+
+
+
+
+
+
 
                 if (enemiesToDamage != null)
                 {
                     for (int i = 0; i < enemiesToDamage.Length; i++)
                     {
-
-                        //enemiesToDamage[i].GetComponent<TakeDamageEnemy>().TakeDamage(damage);
+                       
+                        CheckKnockBack(i,enemiesToDamage);
+                        
+                        enemiesToDamage[i].GetComponent<TakeDamageEnemy>().TakeDamage(damage);
                         if (attacked)
                         {
-                            //StartCoroutine(shake.Start());
+
                             attacked = false;
                         }
-                        //GameObject g = Instantiate(particles, particlePos.position, particlePos.rotation) as GameObject;
-                        //Destroy(g, totalDuration);
+                        
                     }
                 }
                 
@@ -138,30 +152,28 @@ public class PlayerAttack : MonoBehaviour
                 {
                     for (int i = 0; i < enemiesToDamage1.Length; i++)
                     {
-
-                        //enemiesToDamage[i].GetComponent<TakeDamageEnemy>().TakeDamage(damage);
+                        CheckKnockBack(i, enemiesToDamage1);
+                        enemiesToDamage1[i].GetComponent<TakeDamageEnemy>().TakeDamage(damage);
                         if (attacked)
                         {
-                            //StartCoroutine(shake.Start());
+                            
                             attacked = false;
                         }
-                        //GameObject g = Instantiate(particles, particlePos.position, particlePos.rotation) as GameObject;
-                        //Destroy(g, totalDuration);
+                        
                     }
                 }
                 if (enemiesToDamage2 != null)
                 {
                     for (int i = 0; i < enemiesToDamage2.Length; i++)
                     {
-
-                        //enemiesToDamage[i].GetComponent<TakeDamageEnemy>().TakeDamage(damage);
+                        CheckKnockBack(i, enemiesToDamage2);
+                        enemiesToDamage2[i].GetComponent<TakeDamageEnemy>().TakeDamage(damage);
                         if (attacked)
                         {
-                            //StartCoroutine(shake.Start());
+                            
                             attacked = false;
                         }
-                        //GameObject g = Instantiate(particles, particlePos.position, particlePos.rotation) as GameObject;
-                        //Destroy(g, totalDuration);
+                        
                     }
                 }
                 
@@ -172,6 +184,28 @@ public class PlayerAttack : MonoBehaviour
             
         }
 
+    }
+    IEnumerator AttackWait(float seconds)
+    {
+        Debug.Log("running");
+        yield return new WaitForSeconds(seconds);
+
+    }
+    private void CheckKnockBack(int i, Collider2D[] enemiesToDamage)
+    {
+        Debug.Log(force);
+        if (pC.GetAttackPos())
+        {
+            Debug.Log("Derecha");
+            enemiesToDamage[i].GetComponent<Rigidbody2D>().AddForce(new Vector2(1, 2)*  force);
+        }
+        else
+        {
+            Debug.Log("Izquierda");
+            enemiesToDamage[i].GetComponent<Rigidbody2D>().AddForce(new Vector2(-1, 2) * force);
+            //enemiesToDamage[i].GetComponent<Rigidbody2D>().AddForce(new Vector2(-1, 2) * force);
+        }
+        
     }
     
 }

@@ -20,7 +20,8 @@ public class SlimeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
+        //rb.velocity = Vector3.right * moveSpeed * Time.deltaTime;
+        transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
 
 		if (coll.onLeftWall && spriteRenderer.flipX == true)
 		{

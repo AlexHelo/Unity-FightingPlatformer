@@ -36,6 +36,10 @@ public class PlayerController : MonoBehaviour
 
     public bool groundTouch;
 
+    public GameObject attackPosMeleeLeft,attackPosMeleeRight;
+
+    private GameObject CurrentAttackPos;
+    private bool attackPos;
     private Animator an;
     private PlayerAttack plA;
 
@@ -48,6 +52,7 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         plA = GetComponent<PlayerAttack>();
+        CurrentAttackPos = attackPosMeleeRight;
     }
 
     // Update is called once per frame
@@ -172,10 +177,12 @@ public class PlayerController : MonoBehaviour
         if (dir.x < 0)
         {
             spriteRenderer.flipX = true;
+            flipAttack(false);
         }
         else if (dir.x > 0)
         {
             spriteRenderer.flipX = false;
+            flipAttack(true);
         }
 
     }
@@ -241,6 +248,30 @@ public class PlayerController : MonoBehaviour
         wallJumped = false;
         isDashing = false;
     }
+    private void flipAttack(bool t)
+    {
+        if (t)
+        {
+            CurrentAttackPos = attackPosMeleeRight;
+            attackPos = true;
+        }
+        else
+        {
+            CurrentAttackPos = attackPosMeleeLeft;
+            attackPos = false;
+        }
+        
+        //AttackPosMelee.GetComponent<Transform>().position = new Vector3(-AttackPosMelee.GetComponent<Transform>().position.x, -AttackPosMelee.GetComponent<Transform>().position.y, 0);
+    }
+    public GameObject GetCurrentAttackPos()
+    {
+        return CurrentAttackPos;
+    }
+    public bool GetAttackPos()
+    {
+        return attackPos;
+    }
+
 
     IEnumerator GroundDash()
     {
@@ -253,5 +284,6 @@ public class PlayerController : MonoBehaviour
         if (col.gameObject.layer == 9)
             gameObject.transform.position = new Vector3(0f, -1.485f, 0f);
     }
+
 
 }
