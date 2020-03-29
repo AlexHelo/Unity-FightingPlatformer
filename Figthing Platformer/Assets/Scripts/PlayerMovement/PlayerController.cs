@@ -83,10 +83,20 @@ public class PlayerController : MonoBehaviour
         }
 
 
+
+
         if (Input.GetKeyDown(KeyCode.W) && coll.onWall)
         {
             WallJump();
 
+        }
+        if (coll.onWall)
+        {
+            an.SetBool("WallGrab", true);
+        }
+        else
+        {
+            an.SetBool("WallGrab", false);
         }
 
         if (rb.velocity.y < 0)
@@ -190,6 +200,7 @@ public class PlayerController : MonoBehaviour
             {
                 rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(dir.x * moveSpeed, rb.velocity.y)), wallJumpLerp * Time.deltaTime);
             }
+
             if (dir.x != 0)
             {
                 an.SetBool("Running", true);
@@ -237,7 +248,7 @@ public class PlayerController : MonoBehaviour
 
         Jump(Vector2.up + wallDir);
 
-        Debug.Log("send " + wallDir);
+        //Debug.Log("send " + wallDir);
 
         wallJumped = true;
 
@@ -247,6 +258,7 @@ public class PlayerController : MonoBehaviour
 
     private void Dash(float x, float y)
     {
+        
         hasDashed = true;
 
         rb.velocity = Vector2.zero;
@@ -258,8 +270,9 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator DashWait()
     {
-
+        FindObjectOfType<GhostTrail>().ShowGhost();
         StartCoroutine(GroundDash());
+        
         rb.gravityScale = 0;
 
         wallJumped = true;
