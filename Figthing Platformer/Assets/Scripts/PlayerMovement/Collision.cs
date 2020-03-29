@@ -16,8 +16,8 @@ public class Collision : MonoBehaviour
 
     public Vector2 sizeX;
     public Vector2 sizeY;
-    private Vector2 sizeOffsetY;
-    private Vector2 sizeOffsetX;
+    public Vector2 sizeOffsetY;
+    public Vector2 sizeOffsetX;
     public Vector2 bottomOffset, rightOffset, leftOffset;
     private Color debugCollisionColor = Color.red;
 
@@ -26,12 +26,12 @@ public class Collision : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
 
-        /*sizeOffsetY = new Vector2(0.2f, rend.bounds.size.y);
+        sizeOffsetY = new Vector2(0.1f, rend.bounds.size.y);
         sizeOffsetY.y -= 0.3f;
-        sizeOffsetX = new Vector2(rend.bounds.size.x, 0.2f);
+        sizeOffsetX = new Vector2(rend.bounds.size.x, 0.1f);
         sizeOffsetX.x -= 0.3f;
-        sizeX = new Vector2(sizeOffsetX.x, 0.2f);
-        sizeY = new Vector2(0.2f, sizeOffsetY.y);*/
+        sizeX = new Vector2(sizeOffsetX.x, 0.1f);
+        sizeY = new Vector2(0.1f, sizeOffsetY.y);
     }
 
     // Update is called once per frame

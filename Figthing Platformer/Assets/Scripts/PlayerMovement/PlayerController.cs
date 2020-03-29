@@ -20,7 +20,9 @@ public class PlayerController : MonoBehaviour
     public int numJumps = 2;
     public float jumpPushForce = 10f;
     public int side = 1;
+    public float wallJumpLerp = 10f;
 
+    public float wallJumpForce = 30f;
     public float dashSpeed = 20;
 
 
@@ -36,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
     public bool groundTouch;
 
-    public GameObject attackPosMeleeLeft,attackPosMeleeRight;
+    public GameObject attackPosMeleeLeft, attackPosMeleeRight;
 
     private GameObject CurrentAttackPos;
     private bool attackPos;
@@ -58,8 +60,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-        RaycastHit2D hit = Physics2D.Raycast(transform.position,Vector2.right*transform.localScale.x,distance);
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right * transform.localScale.x, distance);
 
         //Movement
         float x = Input.GetAxis("Horizontal");
@@ -71,19 +73,21 @@ public class PlayerController : MonoBehaviour
 
 
         //Better Jumping
-        if (Input.GetKeyDown(KeyCode.W) && numJumps > 0)
+        if (Input.GetKeyDown(KeyCode.W) && numJumps > 0 && !coll.onWall)
         {
             an.SetInteger("JumpNo", numJumps);
-            
+
             Jump(Vector2.up);
 
             numJumps--;
         }
-       
 
-        if (coll.onWall && !coll.onGround){
-             WallJump();
-         }
+
+        if (Input.GetKeyDown(KeyCode.W) && coll.onWall)
+        {
+            WallJump();
+
+        }
 
         if (rb.velocity.y < 0)
         {
@@ -120,6 +124,7 @@ public class PlayerController : MonoBehaviour
             an.SetInteger("JumpNo", numJumps);
             rb.gravityScale = 1;
             hasDashed = false;
+            wallJumped = true;
         }
 
         if (!coll.onGround && rb.velocity.y < 0)
@@ -157,12 +162,12 @@ public class PlayerController : MonoBehaviour
             }
 
         }
-
-        if (coll.onWall && !coll.onGround)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, slideDown);
-        }
-
+        /*
+                if (coll.onWall && !coll.onGround)
+                {
+                    rb.velocity = new Vector2(rb.velocity.x, slideDown);
+                }
+        */
         AttackCheck();
     }
 
@@ -175,24 +180,34 @@ public class PlayerController : MonoBehaviour
     }
     private void Walk(Vector2 dir)
     {
-        rb.velocity = new Vector2(dir.x * moveSpeed, rb.velocity.y);
-        if (dir.x != 0)
+        if (canMove == true)
         {
-            an.SetBool("Running", true);
-        }
-        else
-        {
-            an.SetBool("Running", false);
-        }
-        if (dir.x < 0)
-        {
-            spriteRenderer.flipX = true;
-            flipAttack(false);
-        }
-        else if (dir.x > 0)
-        {
-            spriteRenderer.flipX = false;
-            flipAttack(true);
+            if (!wallJumped)
+            {
+                rb.velocity = new Vector2(dir.x * moveSpeed, rb.velocity.y);
+            }
+            else
+            {
+                rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(dir.x * moveSpeed, rb.velocity.y)), wallJumpLerp * Time.deltaTime);
+            }
+            if (dir.x != 0)
+            {
+                an.SetBool("Running", true);
+            }
+            else
+            {
+                an.SetBool("Running", false);
+            }
+            if (dir.x < 0)
+            {
+                spriteRenderer.flipX = true;
+                flipAttack(false);
+            }
+            else if (dir.x > 0)
+            {
+                spriteRenderer.flipX = false;
+                flipAttack(true);
+            }
         }
 
     }
@@ -206,26 +221,26 @@ public class PlayerController : MonoBehaviour
 
     private void Jump(Vector2 dir)
     {
+
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.velocity += dir * jumpVelocity;
+        Debug.Log("DO " + rb.velocity);
 
     }
 
     private void WallJump()
     {
-        if ((side == 1 && coll.onRightWall) || side == -1 && !coll.onRightWall)
-        {
-            side *= -1;
-        }
 
         StopCoroutine(DisableMovement(0));
         StartCoroutine(DisableMovement(.1f));
-
         Vector2 wallDir = coll.onRightWall ? Vector2.left : Vector2.right;
 
-        Jump((Vector2.up / 1.5f + wallDir / 1.5f));
+        Jump(Vector2.up + wallDir);
+
+        Debug.Log("send " + wallDir);
 
         wallJumped = true;
+
     }
 
 
@@ -270,7 +285,7 @@ public class PlayerController : MonoBehaviour
             CurrentAttackPos = attackPosMeleeLeft;
             attackPos = false;
         }
-        
+
         //AttackPosMelee.GetComponent<Transform>().position = new Vector3(-AttackPosMelee.GetComponent<Transform>().position.x, -AttackPosMelee.GetComponent<Transform>().position.y, 0);
     }
     public GameObject GetCurrentAttackPos()
@@ -288,6 +303,8 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(.15f);
 
     }
+
+
 
     void OnCollisionEnter2D(Collision2D col)
     {
