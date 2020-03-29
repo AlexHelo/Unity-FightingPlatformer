@@ -269,15 +269,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coll: {fileID: 5014669111092515132}
-  moveSpeed: 5
+  moveSpeed: 7
   distance: 1
-  jumpVelocity: 6
-  fallMultiplier: 4
-  lowJumpMultiplier: 3
+  jumpVelocity: 8
+  fallMultiplier: 5
+  lowJumpMultiplier: 4
   slideDown: -7
   numJumps: 2
   jumpPushForce: 10
   side: 1
+  wallJumpLerp: 10
+  wallJumpForce: 30
   dashSpeed: 10
   canMove: 1
   wallGrab: 0
@@ -310,9 +312,11 @@ MonoBehaviour:
   wallSide: 0
   sizeX: {x: 0.74, y: 0.05}
   sizeY: {x: 0.04, y: 1.54}
-  bottomOffset: {x: 0, y: -0.91}
-  rightOffset: {x: -0.53, y: 0.2}
-  leftOffset: {x: 0.53, y: 0.2}
+  sizeOffsetY: {x: 0, y: 0}
+  sizeOffsetX: {x: 0, y: 0}
+  bottomOffset: {x: 0.05, y: -0.9}
+  rightOffset: {x: 0.53, y: 0.2}
+  leftOffset: {x: -0.4, y: 0.2}
 --- !u!114 &5014669111092515134
 MonoBehaviour:
   m_ObjectHideFlags: 0
