@@ -299,7 +299,8 @@ public class PlayerController : MonoBehaviour
 	//IEnumarator for the private dash method
     IEnumerator DashWait()
     {
-        FindObjectOfType<GhostTrail>().ShowGhost();
+        GameObject.Find("Ghost").GetComponent<GhostTrail>().ShowGhost();
+        //FindObjectOfType<GhostTrail>().ShowGhost();
         StartCoroutine(GroundDash());
         
         rb.gravityScale = 0;

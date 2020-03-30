@@ -78,7 +78,7 @@ public class PlayerAttack : MonoBehaviour
     }
 
 	/*
-	 * ATTACK METHOD 
+	 * 5) ATTACK METHOD 
 	 *		1) VALUES
 	 *		2) CAN ATTACK CONDITION
 	 *		3) PRESS KEY CODE CONDITION
@@ -232,7 +232,9 @@ public class PlayerAttack : MonoBehaviour
 	//Auxiliary method for number of attack
 	private Collider2D[] AttackNumber(Collider2D[] enemiesToDamage, Collider2D[] enemiesToDamage1, float applyForce, float xDis, float rbVelocity, float att)
 	{
-		an.SetInteger("AttackNo", attackNum);
+        GameObject.Find("GhostAttack").GetComponent<GhostTrail>().ShowGhost();
+        //FindObjectOfType<GhostTrail>().ShowGhost();
+        an.SetInteger("AttackNo", attackNum);
 		rigidbody.velocity = new Vector2(rbVelocity, 0f);
 		enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, att, whatIsEnemies);
 
