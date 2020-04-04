@@ -1,0 +1,5617 @@
+fileFormatVersion: 2
+guid: e0c95771c49c3ef40b569dee9ca35c8a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3725949209381805382
+    second: FireWithoutBack_0
+  - first:
+      213: -2381090695218150399
+    second: FireWithoutBack_1
+  - first:
+      213: 1959987513882117861
+    second: FireWithoutBack_2
+  - first:
+      213: 8903821831306036587
+    second: FireWithoutBack_3
+  - first:
+      213: -9048066904359865039
+    second: FireWithoutBack_4
+  - first:
+      213: -4749888974557393150
+    second: FireWithoutBack_5
+  - first:
+      213: 2657247172304351642
+    second: FireWithoutBack_6
+  - first:
+      213: -450350101839796313
+    second: FireWithoutBack_7
+  - first:
+      213: 4204757517471747200
+    second: FireWithoutBack_8
+  - first:
+      213: 8210624629427724615
+    second: FireWithoutBack_9
+  - first:
+      213: -7856394048202998594
+    second: FireWithoutBack_10
+  - first:
+      213: 5204895923569803012
+    second: FireWithoutBack_11
+  - first:
+      213: -8246140314799210321
+    second: FireWithoutBack_12
+  - first:
+      213: -8612285690119094068
+    second: FireWithoutBack_13
+  - first:
+      213: -8961439287060932560
+    second: FireWithoutBack_14
+  - first:
+      213: -4809007262375913532
+    second: FireWithoutBack_15
+  - first:
+      213: 7498621255684435492
+    second: FireWithoutBack_16
+  - first:
+      213: -9102294733682960077
+    second: FireWithoutBack_17
+  - first:
+      213: 3099116161807923507
+    second: FireWithoutBack_18
+  - first:
+      213: -759764061492113221
+    second: FireWithoutBack_19
+  - first:
+      213: 4202173244433588220
+    second: FireWithoutBack_20
+  - first:
+      213: 8112060005627829585
+    second: FireWithoutBack_21
+  - first:
+      213: -5714862081557639889
+    second: FireWithoutBack_22
+  - first:
+      213: 3234547221549997607
+    second: FireWithoutBack_23
+  - first:
+      213: -8844283984299566854
+    second: FireWithoutBack_24
+  - first:
+      213: -1433344009469275043
+    second: FireWithoutBack_25
+  - first:
+      213: -7198139951835523492
+    second: FireWithoutBack_26
+  - first:
+      213: -3974540087082439519
+    second: FireWithoutBack_27
+  - first:
+      213: -9110726619418196031
+    second: FireWithoutBack_28
+  - first:
+      213: 5016920351789552312
+    second: FireWithoutBack_29
+  - first:
+      213: 1415942730272158470
+    second: FireWithoutBack_30
+  - first:
+      213: 6168449830119065206
+    second: FireWithoutBack_31
+  - first:
+      213: -2188919992680045555
+    second: FireWithoutBack_32
+  - first:
+      213: -136914588569015640
+    second: FireWithoutBack_33
+  - first:
+      213: 4851802665728898908
+    second: FireWithoutBack_34
+  - first:
+      213: 1166894149362490893
+    second: FireWithoutBack_35
+  - first:
+      213: -7016917129107864673
+    second: FireWithoutBack_36
+  - first:
+      213: 2076856336487998153
+    second: FireWithoutBack_37
+  - first:
+      213: -2482458788335957966
+    second: FireWithoutBack_38
+  - first:
+      213: -6798645011867266539
+    second: FireWithoutBack_39
+  - first:
+      213: 1044372655781593343
+    second: FireWithoutBack_40
+  - first:
+      213: 4347428927944667322
+    second: FireWithoutBack_41
+  - first:
+      213: -3859739947681253922
+    second: FireWithoutBack_42
+  - first:
+      213: -6865534964938013308
+    second: FireWithoutBack_43
+  - first:
+      213: 3500638175949480590
+    second: FireWithoutBack_44
+  - first:
+      213: -8049744462912526849
+    second: FireWithoutBack_45
+  - first:
+      213: -8827284431186643231
+    second: FireWithoutBack_46
+  - first:
+      213: 6903727590772686137
+    second: FireWithoutBack_47
+  - first:
+      213: 1445182317616194876
+    second: FireWithoutBack_48
+  - first:
+      213: -5272316213724833575
+    second: FireWithoutBack_49
+  - first:
+      213: 8935888111401133408
+    second: FireWithoutBack_50
+  - first:
+      213: 4927491088107574271
+    second: FireWithoutBack_51
+  - first:
+      213: -4865800264528139902
+    second: FireWithoutBack_52
+  - first:
+      213: 7746976349172270021
+    second: FireWithoutBack_53
+  - first:
+      213: 5160950024237415851
+    second: FireWithoutBack_54
+  - first:
+      213: -4406542226505895355
+    second: FireWithoutBack_55
+  - first:
+      213: -310009803742761934
+    second: FireWithoutBack_56
+  - first:
+      213: 8415831769773590624
+    second: FireWithoutBack_57
+  - first:
+      213: -3540096329305187988
+    second: FireWithoutBack_58
+  - first:
+      213: 2651747376644390153
+    second: FireWithoutBack_59
+  - first:
+      213: 7290967973508584541
+    second: FireWithoutBack_60
+  - first:
+      213: -4820289574931261976
+    second: FireWithoutBack_61
+  - first:
+      213: 7897278621045983328
+    second: FireWithoutBack_62
+  - first:
+      213: 4777548230396699940
+    second: FireWithoutBack_63
+  - first:
+      213: -7090359661172305613
+    second: FireWithoutBack_64
+  - first:
+      213: -8411805820541293746
+    second: FireWithoutBack_65
+  - first:
+      213: 1254872772271874802
+    second: FireWithoutBack_66
+  - first:
+      213: 7441384759932571529
+    second: FireWithoutBack_67
+  - first:
+      213: -4682686534114250493
+    second: FireWithoutBack_68
+  - first:
+      213: 5298817654304686773
+    second: FireWithoutBack_69
+  - first:
+      213: -721941082224046117
+    second: FireWithoutBack_70
+  - first:
+      213: 5915484061482439698
+    second: FireWithoutBack_71
+  - first:
+      213: -2343673158163427374
+    second: FireWithoutBack_72
+  - first:
+      213: 5523815777353961082
+    second: FireWithoutBack_73
+  - first:
+      213: 1927001678446978951
+    second: FireWithoutBack_74
+  - first:
+      213: 7175050729183975874
+    second: FireWithoutBack_75
+  - first:
+      213: 7394686333655670573
+    second: FireWithoutBack_76
+  - first:
+      213: 6230793894865298505
+    second: FireWithoutBack_77
+  - first:
+      213: -6808491224476331105
+    second: FireWithoutBack_78
+  - first:
+      213: 1299772964339812887
+    second: FireWithoutBack_79
+  - first:
+      213: 6234324316992611364
+    second: FireWithoutBack_80
+  - first:
+      213: 4561829866604037295
+    second: FireWithoutBack_81
+  - first:
+      213: 8042023307868620737
+    second: FireWithoutBack_82
+  - first:
+      213: -5870874652273340353
+    second: FireWithoutBack_83
+  - first:
+      213: -1647080171948492995
+    second: FireWithoutBack_84
+  - first:
+      213: -7261106927087423073
+    second: FireWithoutBack_85
+  - first:
+      213: -3013445583558322338
+    second: FireWithoutBack_86
+  - first:
+      213: 6711914400810229371
+    second: FireWithoutBack_87
+  - first:
+      213: -3809469459939705568
+    second: FireWithoutBack_88
+  - first:
+      213: 8840791121046163385
+    second: FireWithoutBack_89
+  - first:
+      213: 7109427745668151941
+    second: FireWithoutBack_90
+  - first:
+      213: -5124598452379739264
+    second: FireWithoutBack_91
+  - first:
+      213: -3244589798378810140
+    second: FireWithoutBack_92
+  - first:
+      213: -8850596170797812345
+    second: FireWithoutBack_93
+  - first:
+      213: 7485207278989766307
+    second: FireWithoutBack_94
+  - first:
+      213: -2164191925555556217
+    second: FireWithoutBack_95
+  - first:
+      213: -2243738508856388453
+    second: FireWithoutBack_96
+  - first:
+      213: -2376373115532754192
+    second: FireWithoutBack_97
+  - first:
+      213: -1134786860141975873
+    second: FireWithoutBack_98
+  - first:
+      213: 7785050013331819519
+    second: FireWithoutBack_99
+  - first:
+      213: 4165042093911861509
+    second: FireWithoutBack_100
+  - first:
+      213: -7794749670064564323
+    second: FireWithoutBack_101
+  - first:
+      213: 2538247462769489191
+    second: FireWithoutBack_102
+  - first:
+      213: 3526083611349513185
+    second: FireWithoutBack_103
+  - first:
+      213: -7812446946152454700
+    second: FireWithoutBack_104
+  - first:
+      213: 5116203993918533051
+    second: FireWithoutBack_105
+  - first:
+      213: -4606507023440847582
+    second: FireWithoutBack_106
+  - first:
+      213: -5476192804493436852
+    second: FireWithoutBack_107
+  - first:
+      213: -5446931128355929351
+    second: FireWithoutBack_108
+  - first:
+      213: -3515455979507957485
+    second: FireWithoutBack_109
+  - first:
+      213: -3718536962702598984
+    second: FireWithoutBack_110
+  - first:
+      213: 3199709848837145808
+    second: FireWithoutBack_111
+  - first:
+      213: 2936507521340171197
+    second: FireWithoutBack_112
+  - first:
+      213: -6166296052183013846
+    second: FireWithoutBack_113
+  - first:
+      213: 8022070364769445761
+    second: FireWithoutBack_114
+  - first:
+      213: 369221659494454740
+    second: FireWithoutBack_115
+  - first:
+      213: -4267481293027437818
+    second: FireWithoutBack_116
+  - first:
+      213: -1543071334692250438
+    second: FireWithoutBack_117
+  - first:
+      213: -7193800156180655314
+    second: FireWithoutBack_118
+  - first:
+      213: 6942072182471676341
+    second: FireWithoutBack_119
+  - first:
+      213: -4075579262023536905
+    second: FireWithoutBack_120
+  - first:
+      213: 9116351375917122714
+    second: FireWithoutBack_121
+  - first:
+      213: 4657632815527088730
+    second: FireWithoutBack_122
+  - first:
+      213: -6689043672372207712
+    second: FireWithoutBack_123
+  - first:
+      213: 6378386367092347141
+    second: FireWithoutBack_124
+  - first:
+      213: 5983914382490731836
+    second: FireWithoutBack_125
+  - first:
+      213: 2810128828381708678
+    second: FireWithoutBack_126
+  - first:
+      213: 8299924294109267945
+    second: FireWithoutBack_127
+  - first:
+      213: -8936279097454692280
+    second: FireWithoutBack_128
+  - first:
+      213: -1608041796070766695
+    second: FireWithoutBack_129
+  - first:
+      213: 635850466902237837
+    second: FireWithoutBack_130
+  - first:
+      213: -1720933442347612569
+    second: FireWithoutBack_131
+  - first:
+      213: -5673898905962112846
+    second: FireWithoutBack_132
+  - first:
+      213: -6912674875707213372
+    second: FireWithoutBack_133
+  - first:
+      213: 6230150248653892742
+    second: FireWithoutBack_134
+  - first:
+      213: -1125372159225893194
+    second: FireWithoutBack_135
+  - first:
+      213: -5117703062816762767
+    second: FireWithoutBack_136
+  - first:
+      213: -9133518141230216961
+    second: FireWithoutBack_137
+  - first:
+      213: -3664689459666567954
+    second: FireWithoutBack_138
+  - first:
+      213: 7654970398189950852
+    second: FireWithoutBack_139
+  - first:
+      213: 2584378781442152921
+    second: FireWithoutBack_140
+  - first:
+      213: 2358662102845995027
+    second: FireWithoutBack_141
+  - first:
+      213: 5467449103135162138
+    second: FireWithoutBack_142
+  - first:
+      213: -218070191285970183
+    second: FireWithoutBack_143
+  - first:
+      213: -2183117176287221616
+    second: FireWithoutBack_144
+  - first:
+      213: -3385059878038534346
+    second: FireWithoutBack_145
+  - first:
+      213: 1033826190724394333
+    second: FireWithoutBack_146
+  - first:
+      213: -8465179132416962148
+    second: FireWithoutBack_147
+  - first:
+      213: -2475321180318064997
+    second: FireWithoutBack_148
+  - first:
+      213: -7646614462413714716
+    second: FireWithoutBack_149
+  - first:
+      213: 3419629375272000722
+    second: FireWithoutBack_150
+  - first:
+      213: -6974916140854029137
+    second: FireWithoutBack_151
+  - first:
+      213: 7069271966895870793
+    second: FireWithoutBack_152
+  - first:
+      213: 5360000351362138741
+    second: FireWithoutBack_153
+  - first:
+      213: 5446106008190423139
+    second: FireWithoutBack_154
+  - first:
+      213: 855584305550589012
+    second: FireWithoutBack_155
+  - first:
+      213: 3361831245037188295
+    second: FireWithoutBack_156
+  - first:
+      213: -1745085391637416621
+    second: FireWithoutBack_157
+  - first:
+      213: -5712837549189032403
+    second: FireWithoutBack_158
+  - first:
+      213: -7609623199310248800
+    second: FireWithoutBack_159
+  - first:
+      213: 1027055589094956847
+    second: FireWithoutBack_160
+  - first:
+      213: -3406764574471249417
+    second: FireWithoutBack_161
+  - first:
+      213: 6110114907520379343
+    second: FireWithoutBack_162
+  - first:
+      213: -5533743119569520688
+    second: FireWithoutBack_163
+  - first:
+      213: 6113334276963678218
+    second: FireWithoutBack_164
+  - first:
+      213: 1284709418050151911
+    second: FireWithoutBack_165
+  - first:
+      213: 6748558914802357465
+    second: FireWithoutBack_166
+  - first:
+      213: -6228881921616319227
+    second: FireWithoutBack_167
+  - first:
+      213: -2594355984262251095
+    second: FireWithoutBack_168
+  - first:
+      213: -3994019957243624970
+    second: FireWithoutBack_169
+  - first:
+      213: 7169334114251068025
+    second: FireWithoutBack_170
+  - first:
+      213: -2339515927151874802
+    second: FireWithoutBack_171
+  - first:
+      213: 457935942945736525
+    second: FireWithoutBack_172
+  - first:
+      213: -6693029346824440949
+    second: FireWithoutBack_173
+  - first:
+      213: 72192449084606117
+    second: FireWithoutBack_174
+  - first:
+      213: -9110107108015373195
+    second: FireWithoutBack_175
+  - first:
+      213: -3446122104945268911
+    second: FireWithoutBack_176
+  - first:
+      213: -2018342265577992235
+    second: FireWithoutBack_177
+  - first:
+      213: 2034188485505198190
+    second: FireWithoutBack_178
+  - first:
+      213: 7884858182761826704
+    second: FireWithoutBack_179
+  - first:
+      213: 1218184920242548895
+    second: FireWithoutBack_180
+  - first:
+      213: -2454472852782073379
+    second: FireWithoutBack_181
+  - first:
+      213: 201186789092465741
+    second: FireWithoutBack_182
+  - first:
+      213: -1551560939603558498
+    second: FireWithoutBack_183
+  - first:
+      213: -2637776662043083715
+    second: FireWithoutBack_184
+  - first:
+      213: -2129347279629405452
+    second: FireWithoutBack_185
+  - first:
+      213: 4305052856344150131
+    second: FireWithoutBack_186
+  - first:
+      213: 1431857025345432328
+    second: FireWithoutBack_187
+  - first:
+      213: -71628406270877963
+    second: FireWithoutBack_188
+  - first:
+      213: -3528307247007426357
+    second: FireWithoutBack_189
+  - first:
+      213: -3874608525440338184
+    second: FireWithoutBack_190
+  - first:
+      213: 112694443953324622
+    second: FireWithoutBack_191
+  - first:
+      213: -5012959038649825717
+    second: FireWithoutBack_192
+  - first:
+      213: -6064129056112608986
+    second: FireWithoutBack_193
+  - first:
+      213: -3117536275124002565
+    second: FireWithoutBack_194
+  - first:
+      213: -501254408585615786
+    second: FireWithoutBack_195
+  - first:
+      213: -1231838909247916292
+    second: FireWithoutBack_196
+  - first:
+      213: -865105762444693733
+    second: FireWithoutBack_197
+  - first:
+      213: 6357062757331290639
+    second: FireWithoutBack_198
+  - first:
+      213: -6010038831181159536
+    second: FireWithoutBack_199
+  - first:
+      213: 5629901666876640700
+    second: FireWithoutBack_200
+  - first:
+      213: 2911175380700616070
+    second: FireWithoutBack_201
+  - first:
+      213: 1566736021975931583
+    second: FireWithoutBack_202
+  - first:
+      213: 7313458589720258439
+    second: FireWithoutBack_203
+  - first:
+      213: -4435092901058626274
+    second: FireWithoutBack_204
+  - first:
+      213: 3123474770373073904
+    second: FireWithoutBack_205
+  - first:
+      213: 4903952316501252458
+    second: FireWithoutBack_206
+  - first:
+      213: -357189728109843855
+    second: FireWithoutBack_207
+  - first:
+      213: 1411480115943469473
+    second: FireWithoutBack_208
+  - first:
+      213: -8817615456277709330
+    second: FireWithoutBack_209
+  - first:
+      213: 8387956252029383366
+    second: FireWithoutBack_210
+  - first:
+      213: 4357436036074098986
+    second: FireWithoutBack_211
+  - first:
+      213: -2495365220092189299
+    second: FireWithoutBack_212
+  - first:
+      213: -674183928559283254
+    second: FireWithoutBack_213
+  - first:
+      213: -7373502463231913309
+    second: FireWithoutBack_214
+  - first:
+      213: 5664330967545592153
+    second: FireWithoutBack_215
+  - first:
+      213: 5546889022477465048
+    second: FireWithoutBack_216
+  - first:
+      213: 1068088729861144509
+    second: FireWithoutBack_217
+  - first:
+      213: -1158658033767977085
+    second: FireWithoutBack_218
+  - first:
+      213: -7940100193420103098
+    second: FireWithoutBack_219
+  - first:
+      213: -2916659329961742085
+    second: FireWithoutBack_220
+  - first:
+      213: -1425411413618860189
+    second: FireWithoutBack_221
+  - first:
+      213: -6138411183726062029
+    second: FireWithoutBack_222
+  - first:
+      213: 6831150581485389872
+    second: FireWithoutBack_223
+  - first:
+      213: 7731687534482594416
+    second: FireWithoutBack_224
+  - first:
+      213: 7964958120001908247
+    second: FireWithoutBack_225
+  - first:
+      213: -8192610851013874084
+    second: FireWithoutBack_226
+  - first:
+      213: -574768637745488877
+    second: FireWithoutBack_227
+  - first:
+      213: -3583282977542284073
+    second: FireWithoutBack_228
+  - first:
+      213: 6555787493430850965
+    second: FireWithoutBack_229
+  - first:
+      213: 7734454334167608776
+    second: FireWithoutBack_230
+  - first:
+      213: -1505560892611949042
+    second: FireWithoutBack_231
+  - first:
+      213: -4358645513310410911
+    second: FireWithoutBack_232
+  - first:
+      213: 6698443504282419044
+    second: FireWithoutBack_233
+  - first:
+      213: -3999516854386972939
+    second: FireWithoutBack_234
+  - first:
+      213: -7899493935026030298
+    second: FireWithoutBack_235
+  - first:
+      213: -7124042424432536571
+    second: FireWithoutBack_236
+  - first:
+      213: -3521193921329816857
+    second: FireWithoutBack_237
+  - first:
+      213: -6431420466850675417
+    second: FireWithoutBack_238
+  - first:
+      213: 5692193531566542831
+    second: FireWithoutBack_239
+  - first:
+      213: 6563101845617018472
+    second: FireWithoutBack_240
+  - first:
+      213: -7437077162481298108
+    second: FireWithoutBack_241
+  - first:
+      213: -8508174475012793290
+    second: FireWithoutBack_242
+  - first:
+      213: 7185160447206166147
+    second: FireWithoutBack_243
+  - first:
+      213: -7809097973443211344
+    second: FireWithoutBack_244
+  - first:
+      213: -8144737050801746879
+    second: FireWithoutBack_245
+  - first:
+      213: -5734715274725202186
+    second: FireWithoutBack_246
+  - first:
+      213: -8425988144094295996
+    second: FireWithoutBack_247
+  - first:
+      213: 4741962641273616517
+    second: FireWithoutBack_248
+  - first:
+      213: 1572901746943244951
+    second: FireWithoutBack_249
+  - first:
+      213: 268532478887487167
+    second: FireWithoutBack_250
+  - first:
+      213: -5910554532596929580
+    second: FireWithoutBack_251
+  - first:
+      213: 603286168110073028
+    second: FireWithoutBack_252
+  - first:
+      213: 3220041015524639362
+    second: FireWithoutBack_253
+  - first:
+      213: -3944406697492205090
+    second: FireWithoutBack_254
+  - first:
+      213: -169364490983955846
+    second: FireWithoutBack_255
+  - first:
+      213: 1533590026720095987
+    second: FireWithoutBack_256
+  - first:
+      213: -4562724305043397672
+    second: FireWithoutBack_257
+  - first:
+      213: 159592804551125967
+    second: FireWithoutBack_258
+  - first:
+      213: -8194764759823209890
+    second: FireWithoutBack_259
+  - first:
+      213: 8517255886615790
+    second: FireWithoutBack_260
+  - first:
+      213: -7385803090498542404
+    second: FireWithoutBack_261
+  - first:
+      213: -93163169542879842
+    second: FireWithoutBack_262
+  - first:
+      213: -8322220369923439983
+    second: FireWithoutBack_263
+  - first:
+      213: -6950655593180605275
+    second: FireWithoutBack_264
+  - first:
+      213: 102086027466224025
+    second: FireWithoutBack_265
+  - first:
+      213: -126724704899497892
+    second: FireWithoutBack_266
+  - first:
+      213: 6348957615804399776
+    second: FireWithoutBack_267
+  - first:
+      213: -4274201444647311803
+    second: FireWithoutBack_268
+  - first:
+      213: -3232064123017928619
+    second: FireWithoutBack_269
+  - first:
+      213: -2557163807165587864
+    second: FireWithoutBack_270
+  - first:
+      213: -2047100024289048266
+    second: FireWithoutBack_271
+  - first:
+      213: 3185489780062252736
+    second: FireWithoutBack_272
+  - first:
+      213: 1183360868721041482
+    second: FireWithoutBack_273
+  - first:
+      213: 4655510507992377086
+    second: FireWithoutBack_274
+  - first:
+      213: 733328973897491118
+    second: FireWithoutBack_275
+  - first:
+      213: -6966694034238487131
+    second: FireWithoutBack_276
+  - first:
+      213: -6805381573140462768
+    second: FireWithoutBack_277
+  - first:
+      213: -7143482380440801882
+    second: FireWithoutBack_278
+  - first:
+      213: -4523842647330416386
+    second: FireWithoutBack_279
+  - first:
+      213: 1731199062825750481
+    second: FireWithoutBack_280
+  - first:
+      213: -6694441816870182453
+    second: FireWithoutBack_281
+  - first:
+      213: -8083755215356086588
+    second: FireWithoutBack_282
+  - first:
+      213: 6373074243269285926
+    second: FireWithoutBack_283
+  - first:
+      213: -3815492264108417476
+    second: FireWithoutBack_284
+  - first:
+      213: -2805453691103462448
+    second: FireWithoutBack_285
+  - first:
+      213: 8094127936995424638
+    second: FireWithoutBack_286
+  - first:
+      213: -2776426994942098333
+    second: FireWithoutBack_287
+  - first:
+      213: -8503535847483699296
+    second: FireWithoutBack_288
+  - first:
+      213: -425062744267009593
+    second: FireWithoutBack_289
+  - first:
+      213: 2809636242367896966
+    second: FireWithoutBack_290
+  - first:
+      213: 2387743731990075145
+    second: FireWithoutBack_291
+  - first:
+      213: 7124972339225187243
+    second: FireWithoutBack_292
+  - first:
+      213: 3406549683512608515
+    second: FireWithoutBack_293
+  - first:
+      213: 3265627744705547016
+    second: FireWithoutBack_294
+  - first:
+      213: -735500831403463590
+    second: FireWithoutBack_295
+  - first:
+      213: 2475573604618943367
+    second: FireWithoutBack_296
+  - first:
+      213: 3602691852933916691
+    second: FireWithoutBack_297
+  - first:
+      213: -1832743380695208302
+    second: FireWithoutBack_298
+  - first:
+      213: 3217864121117122479
+    second: FireWithoutBack_299
+  - first:
+      213: -2784544936196606783
+    second: FireWithoutBack_300
+  - first:
+      213: -1617797871275793762
+    second: FireWithoutBack_301
+  - first:
+      213: -469894811490718106
+    second: FireWithoutBack_302
+  - first:
+      213: -7111078122345670356
+    second: FireWithoutBack_303
+  - first:
+      213: -7892929291948882710
+    second: FireWithoutBack_304
+  - first:
+      213: 1082522703725478693
+    second: FireWithoutBack_305
+  - first:
+      213: 5152966863471622213
+    second: FireWithoutBack_306
+  - first:
+      213: 5932488008533568016
+    second: FireWithoutBack_307
+  - first:
+      213: -9149383759169044762
+    second: FireWithoutBack_308
+  - first:
+      213: 2275721814615857941
+    second: FireWithoutBack_309
+  - first:
+      213: -1025907600474242455
+    second: FireWithoutBack_310
+  - first:
+      213: 1230432717368188079
+    second: FireWithoutBack_311
+  - first:
+      213: 4234974451817100242
+    second: FireWithoutBack_312
+  - first:
+      213: -8037457460673742659
+    second: FireWithoutBack_313
+  - first:
+      213: -4986149915744735684
+    second: FireWithoutBack_314
+  - first:
+      213: 7810636226722655896
+    second: FireWithoutBack_315
+  - first:
+      213: -5822487433353880848
+    second: FireWithoutBack_316
+  - first:
+      213: -4208588801603973036
+    second: FireWithoutBack_317
+  - first:
+      213: 3629643137393254706
+    second: FireWithoutBack_318
+  - first:
+      213: 1417352100994651174
+    second: FireWithoutBack_319
+  - first:
+      213: 635713535225587832
+    second: FireWithoutBack_320
+  - first:
+      213: -6420361138850925033
+    second: FireWithoutBack_321
+  - first:
+      213: 3105157792213212744
+    second: FireWithoutBack_322
+  - first:
+      213: -3647231011788582194
+    second: FireWithoutBack_323
+  - first:
+      213: -1120220329367195862
+    second: FireWithoutBack_324
+  - first:
+      213: 5892197208970228802
+    second: FireWithoutBack_325
+  - first:
+      213: 4198144630439700573
+    second: FireWithoutBack_326
+  - first:
+      213: 3594223575439515465
+    second: FireWithoutBack_327
+  - first:
+      213: -4656556243644564591
+    second: FireWithoutBack_328
+  - first:
+      213: -4932475774914382434
+    second: FireWithoutBack_329
+  - first:
+      213: -5378853362037696608
+    second: FireWithoutBack_330
+  - first:
+      213: 907183567806314476
+    second: FireWithoutBack_331
+  - first:
+      213: 7900649913740229058
+    second: FireWithoutBack_332
+  - first:
+      213: 4150056152864246788
+    second: FireWithoutBack_333
+  - first:
+      213: 6589797946352136125
+    second: FireWithoutBack_334
+  - first:
+      213: -2132134990300746100
+    second: FireWithoutBack_335
+  - first:
+      213: -8084066815288534244
+    second: FireWithoutBack_336
+  - first:
+      213: 6235238297913162551
+    second: FireWithoutBack_337
+  - first:
+      213: 4751456693637619788
+    second: FireWithoutBack_338
+  - first:
+      213: -8834623950995503831
+    second: FireWithoutBack_339
+  - first:
+      213: -757266300873723309
+    second: FireWithoutBack_340
+  - first:
+      213: -2053862121379571497
+    second: FireWithoutBack_341
+  - first:
+      213: -8270673883495277696
+    second: FireWithoutBack_342
+  - first:
+      213: 7592856407102195262
+    second: FireWithoutBack_343
+  - first:
+      213: -7152605290397179280
+    second: FireWithoutBack_344
+  - first:
+      213: 8218976494099649771
+    second: FireWithoutBack_345
+  - first:
+      213: 5658297834185283395
+    second: FireWithoutBack_346
+  - first:
+      213: 4025063550905690822
+    second: FireWithoutBack_347
+  - first:
+      213: 1759218927407758147
+    second: FireWithoutBack_348
+  - first:
+      213: -4870653117243038134
+    second: FireWithoutBack_349
+  - first:
+      213: -1248342492659568693
+    second: FireWithoutBack_350
+  - first:
+      213: 7666609356761114238
+    second: FireWithoutBack_351
+  - first:
+      213: 7432417369166980227
+    second: FireWithoutBack_352
+  - first:
+      213: -8370450975363852839
+    second: FireWithoutBack_353
+  - first:
+      213: -1515590663727865356
+    second: FireWithoutBack_354
+  - first:
+      213: 6194445892573868736
+    second: FireWithoutBack_355
+  - first:
+      213: 4521895120679490680
+    second: FireWithoutBack_356
+  - first:
+      213: 4721936436513068550
+    second: FireWithoutBack_357
+  - first:
+      213: 3305533416591443482
+    second: FireWithoutBack_358
+  - first:
+      213: -3415595662849373375
+    second: FireWithoutBack_359
+  - first:
+      213: -6412999215109005265
+    second: FireWithoutBack_360
+  - first:
+      213: 656215492221567903
+    second: FireWithoutBack_361
+  - first:
+      213: -5706920817852789789
+    second: FireWithoutBack_362
+  - first:
+      213: -4074884073252729889
+    second: FireWithoutBack_363
+  - first:
+      213: 5783076693224592962
+    second: FireWithoutBack_364
+  - first:
+      213: 4797885589987886803
+    second: FireWithoutBack_365
+  - first:
+      213: 1997523837639161254
+    second: FireWithoutBack_366
+  - first:
+      213: -8044145535119140537
+    second: FireWithoutBack_367
+  - first:
+      213: 3577768176438051805
+    second: FireWithoutBack_368
+  - first:
+      213: 3399198722646186081
+    second: FireWithoutBack_369
+  - first:
+      213: -7756102647232406987
+    second: FireWithoutBack_370
+  - first:
+      213: 4709103775860654957
+    second: FireWithoutBack_371
+  - first:
+      213: -576262802535630716
+    second: FireWithoutBack_372
+  - first:
+      213: 658473926467909601
+    second: FireWithoutBack_373
+  - first:
+      213: -510719482251420473
+    second: FireWithoutBack_374
+  - first:
+      213: 9171383175566185288
+    second: FireWithoutBack_375
+  - first:
+      213: 764700182525907132
+    second: FireWithoutBack_376
+  - first:
+      213: 3324721212010267533
+    second: FireWithoutBack_377
+  - first:
+      213: -4438269506686916558
+    second: FireWithoutBack_378
+  - first:
+      213: -4358224965998140701
+    second: FireWithoutBack_379
+  - first:
+      213: -4249684742523306766
+    second: FireWithoutBack_380
+  - first:
+      213: 4255916267117773893
+    second: FireWithoutBack_381
+  - first:
+      213: 777407153270891630
+    second: FireWithoutBack_382
+  - first:
+      213: 2563059808515502461
+    second: FireWithoutBack_383
+  - first:
+      213: -2987300214936096641
+    second: FireWithoutBack_384
+  - first:
+      213: 1171017594741705040
+    second: FireWithoutBack_385
+  - first:
+      213: -2413318766563136997
+    second: FireWithoutBack_386
+  - first:
+      213: 6266036338865512363
+    second: FireWithoutBack_387
+  - first:
+      213: 1063670727382129818
+    second: FireWithoutBack_388
+  - first:
+      213: 1280147381106503637
+    second: FireWithoutBack_389
+  - first:
+      213: 6223803665986731946
+    second: FireWithoutBack_390
+  - first:
+      213: 8642932498758148173
+    second: FireWithoutBack_391
+  - first:
+      213: -8179811361115897385
+    second: FireWithoutBack_392
+  - first:
+      213: 5590301320834570940
+    second: FireWithoutBack_393
+  - first:
+      213: 8558866173388701935
+    second: FireWithoutBack_394
+  - first:
+      213: 3850654815849339906
+    second: FireWithoutBack_395
+  - first:
+      213: -7154208286000980482
+    second: FireWithoutBack_396
+  - first:
+      213: 4758822380234066483
+    second: FireWithoutBack_397
+  - first:
+      213: -3668642606044509925
+    second: FireWithoutBack_398
+  - first:
+      213: -7795152667119827409
+    second: FireWithoutBack_399
+  - first:
+      213: -1819021928302257170
+    second: FireWithoutBack_400
+  - first:
+      213: 1630036784178821988
+    second: FireWithoutBack_401
+  - first:
+      213: 6460727816097918334
+    second: FireWithoutBack_402
+  - first:
+      213: 6905663508131232738
+    second: FireWithoutBack_403
+  - first:
+      213: 6386915097670959696
+    second: FireWithoutBack_404
+  - first:
+      213: -8058386179073099220
+    second: FireWithoutBack_405
+  - first:
+      213: 4999904999437397400
+    second: FireWithoutBack_406
+  - first:
+      213: 9078594058446194337
+    second: FireWithoutBack_407
+  - first:
+      213: 409585532899514870
+    second: FireWithoutBack_408
+  - first:
+      213: 6749190739257324150
+    second: FireWithoutBack_409
+  - first:
+      213: -408028033384425988
+    second: FireWithoutBack_410
+  - first:
+      213: -7928289623857204183
+    second: FireWithoutBack_411
+  - first:
+      213: -7771895240676287685
+    second: FireWithoutBack_412
+  - first:
+      213: 3757000883444459267
+    second: FireWithoutBack_413
+  - first:
+      213: -2017005571131131373
+    second: FireWithoutBack_414
+  - first:
+      213: 6449457963370885201
+    second: FireWithoutBack_415
+  - first:
+      213: -2557078283081484481
+    second: FireWithoutBack_416
+  - first:
+      213: -7968605040816959949
+    second: FireWithoutBack_417
+  - first:
+      213: -7626815454820886054
+    second: FireWithoutBack_418
+  - first:
+      213: -606194524191033494
+    second: FireWithoutBack_419
+  - first:
+      213: 330960447692779107
+    second: FireWithoutBack_420
+  - first:
+      213: 8708749257433976935
+    second: FireWithoutBack_421
+  - first:
+      213: 5580871318148014839
+    second: FireWithoutBack_422
+  - first:
+      213: -7633447046863304778
+    second: FireWithoutBack_423
+  - first:
+      213: -4241422935683767974
+    second: FireWithoutBack_424
+  - first:
+      213: 1954230305305633617
+    second: FireWithoutBack_425
+  - first:
+      213: -7761808325157801796
+    second: FireWithoutBack_426
+  - first:
+      213: -8244740416635335451
+    second: FireWithoutBack_427
+  - first:
+      213: -2089127169155514563
+    second: FireWithoutBack_428
+  - first:
+      213: 7052419982754766494
+    second: FireWithoutBack_429
+  - first:
+      213: -4540617033574140027
+    second: FireWithoutBack_430
+  - first:
+      213: -5318638669561178849
+    second: FireWithoutBack_431
+  - first:
+      213: -4036649283620901871
+    second: FireWithoutBack_432
+  - first:
+      213: 7740163398397461127
+    second: FireWithoutBack_433
+  - first:
+      213: 822456744010613549
+    second: FireWithoutBack_434
+  - first:
+      213: 4771369898521840197
+    second: FireWithoutBack_435
+  - first:
+      213: -4463705211130901947
+    second: FireWithoutBack_436
+  - first:
+      213: -6340705285471681321
+    second: FireWithoutBack_437
+  - first:
+      213: 2672821291172378960
+    second: FireWithoutBack_438
+  - first:
+      213: 3779176653297713044
+    second: FireWithoutBack_439
+  - first:
+      213: -922426209930509173
+    second: FireWithoutBack_440
+  - first:
+      213: 6526559906753071089
+    second: FireWithoutBack_441
+  - first:
+      213: -1972965780892949528
+    second: FireWithoutBack_442
+  - first:
+      213: -8003147094672398724
+    second: FireWithoutBack_443
+  - first:
+      213: 181097421326910053
+    second: FireWithoutBack_444
+  - first:
+      213: -1215247045006423271
+    second: FireWithoutBack_445
+  - first:
+      213: -20242881809551348
+    second: FireWithoutBack_446
+  - first:
+      213: 3846426247469793677
+    second: FireWithoutBack_447
+  - first:
+      213: 7952632313052294925
+    second: FireWithoutBack_448
+  - first:
+      213: 8234349316465933547
+    second: FireWithoutBack_449
+  - first:
+      213: 647755714342072797
+    second: FireWithoutBack_450
+  - first:
+      213: -2614045277131045634
+    second: FireWithoutBack_451
+  - first:
+      213: -2948639968133547
+    second: FireWithoutBack_452
+  - first:
+      213: -1956100146085963709
+    second: FireWithoutBack_453
+  - first:
+      213: 2662684731357634608
+    second: FireWithoutBack_454
+  - first:
+      213: -5781397212215680714
+    second: FireWithoutBack_455
+  - first:
+      213: 8530001649724001441
+    second: FireWithoutBack_456
+  - first:
+      213: 3528462803684336213
+    second: FireWithoutBack_457
+  - first:
+      213: -4014916206005979480
+    second: FireWithoutBack_458
+  - first:
+      213: 1938356907412555631
+    second: FireWithoutBack_459
+  - first:
+      213: -605261494808810792
+    second: FireWithoutBack_460
+  - first:
+      213: 8144901877279133761
+    second: FireWithoutBack_461
+  - first:
+      213: -506364784260314221
+    second: FireWithoutBack_462
+  - first:
+      213: 6773743403239534285
+    second: FireWithoutBack_463
+  - first:
+      213: -9222220248908916710
+    second: FireWithoutBack_464
+  - first:
+      213: 1326345989189303609
+    second: FireWithoutBack_465
+  - first:
+      213: -7894696365997387810
+    second: FireWithoutBack_466
+  - first:
+      213: -3029136370420896717
+    second: FireWithoutBack_467
+  - first:
+      213: 3415721395935057597
+    second: FireWithoutBack_468
+  - first:
+      213: -2233156992473115728
+    second: FireWithoutBack_469
+  - first:
+      213: 8087040786352135905
+    second: FireWithoutBack_470
+  - first:
+      213: -5161883642190861374
+    second: FireWithoutBack_471
+  - first:
+      213: 7991359186084682894
+    second: FireWithoutBack_472
+  - first:
+      213: 2867780385329861333
+    second: FireWithoutBack_473
+  - first:
+      213: 2895099706917282493
+    second: FireWithoutBack_474
+  - first:
+      213: 3240376564854315400
+    second: FireWithoutBack_475
+  - first:
+      213: -1310746076089320611
+    second: FireWithoutBack_476
+  - first:
+      213: 4248225471879578148
+    second: FireWithoutBack_477
+  - first:
+      213: 1328499432602938406
+    second: FireWithoutBack_478
+  - first:
+      213: 350495381082031991
+    second: FireWithoutBack_479
+  - first:
+      213: 8155647352493993894
+    second: FireWithoutBack_480
+  - first:
+      213: 7193846060098733666
+    second: FireWithoutBack_481
+  - first:
+      213: 7574399332131127855
+    second: FireWithoutBack_482
+  - first:
+      213: 2377988282542625516
+    second: FireWithoutBack_483
+  - first:
+      213: -3783900656677455790
+    second: FireWithoutBack_484
+  - first:
+      213: 3053177636674646916
+    second: FireWithoutBack_485
+  - first:
+      213: -921036434819317891
+    second: FireWithoutBack_486
+  - first:
+      213: -1802988362227998462
+    second: FireWithoutBack_487
+  - first:
+      213: 8142667230091524875
+    second: FireWithoutBack_488
+  - first:
+      213: 1888052049605977531
+    second: FireWithoutBack_489
+  - first:
+      213: -4448793274084945782
+    second: FireWithoutBack_490
+  - first:
+      213: 661444637836896502
+    second: FireWithoutBack_491
+  - first:
+      213: 1145158016800522768
+    second: FireWithoutBack_492
+  - first:
+      213: 666917037804655745
+    second: FireWithoutBack_493
+  - first:
+      213: 7519279488195786337
+    second: FireWithoutBack_494
+  - first:
+      213: 5263062537989332237
+    second: FireWithoutBack_495
+  - first:
+      213: 2462157668590333675
+    second: FireWithoutBack_496
+  - first:
+      213: 6834900820274177542
+    second: FireWithoutBack_497
+  - first:
+      213: -8610218648573508237
+    second: FireWithoutBack_498
+  - first:
+      213: -3482177883347114381
+    second: FireWithoutBack_499
+  - first:
+      213: -4391439351012183414
+    second: FireWithoutBack_500
+  - first:
+      213: 4016221547907486223
+    second: FireWithoutBack_501
+  - first:
+      213: 1433906146073030447
+    second: FireWithoutBack_502
+  - first:
+      213: -3105500775816985081
+    second: FireWithoutBack_503
+  - first:
+      213: -4716219157818236361
+    second: FireWithoutBack_504
+  - first:
+      213: 1511919227920035215
+    second: FireWithoutBack_505
+  - first:
+      213: -1513331995390357766
+    second: FireWithoutBack_506
+  - first:
+      213: 7726638582012234271
+    second: FireWithoutBack_507
+  - first:
+      213: -6862210426734566157
+    second: FireWithoutBack_508
+  - first:
+      213: 8483380061574012654
+    second: FireWithoutBack_509
+  - first:
+      213: 8850872521771938151
+    second: FireWithoutBack_510
+  - first:
+      213: 6337107701178378681
+    second: FireWithoutBack_511
+  - first:
+      213: 6258408611123917046
+    second: FireWithoutBack_512
+  - first:
+      213: -2086865460817731904
+    second: FireWithoutBack_513
+  - first:
+      213: 2573942145069154064
+    second: FireWithoutBack_514
+  - first:
+      213: 1826282954722098243
+    second: FireWithoutBack_515
+  - first:
+      213: -1337803067203047406
+    second: FireWithoutBack_516
+  - first:
+      213: -404771172751435937
+    second: FireWithoutBack_517
+  - first:
+      213: -3986442472459538130
+    second: FireWithoutBack_518
+  - first:
+      213: -1326153585239316946
+    second: FireWithoutBack_519
+  - first:
+      213: -2179735980964508180
+    second: FireWithoutBack_520
+  - first:
+      213: -1677987799613978331
+    second: FireWithoutBack_521
+  - first:
+      213: -7242136654651592257
+    second: FireWithoutBack_522
+  - first:
+      213: -2953190667259623672
+    second: FireWithoutBack_523
+  - first:
+      213: -865932356723880320
+    second: FireWithoutBack_524
+  - first:
+      213: -7478194440208842301
+    second: FireWithoutBack_525
+  - first:
+      213: -8288821457809032084
+    second: FireWithoutBack_526
+  - first:
+      213: 654637706382931489
+    second: FireWithoutBack_527
+  - first:
+      213: -2308071270630178736
+    second: FireWithoutBack_528
+  - first:
+      213: 2003500191675981628
+    second: FireWithoutBack_529
+  - first:
+      213: -5126028407105447001
+    second: FireWithoutBack_530
+  - first:
+      213: -3738262783363161410
+    second: FireWithoutBack_531
+  - first:
+      213: 4271367308612635912
+    second: FireWithoutBack_532
+  - first:
+      213: 2565676596308583307
+    second: FireWithoutBack_533
+  - first:
+      213: -5314024497233565781
+    second: FireWithoutBack_534
+  - first:
+      213: -7984210190918741243
+    second: FireWithoutBack_535
+  - first:
+      213: -7171121236897245710
+    second: FireWithoutBack_536
+  - first:
+      213: -5319311628201031587
+    second: FireWithoutBack_537
+  - first:
+      213: -1331701594231213173
+    second: FireWithoutBack_538
+  - first:
+      213: 6071616269962247103
+    second: FireWithoutBack_539
+  - first:
+      213: -9081378960286419103
+    second: FireWithoutBack_540
+  - first:
+      213: 1247434450130394559
+    second: FireWithoutBack_541
+  - first:
+      213: 2222038450810080790
+    second: FireWithoutBack_542
+  - first:
+      213: 2616539838092632404
+    second: FireWithoutBack_543
+  - first:
+      213: -3293140691336372275
+    second: FireWithoutBack_544
+  - first:
+      213: -8687871247146579603
+    second: FireWithoutBack_545
+  - first:
+      213: -8294983025552637313
+    second: FireWithoutBack_546
+  - first:
+      213: -2800930364597915256
+    second: FireWithoutBack_547
+  - first:
+      213: 2974002551144620182
+    second: FireWithoutBack_548
+  - first:
+      213: 1093959988408978911
+    second: FireWithoutBack_549
+  - first:
+      213: 5410961403457344573
+    second: FireWithoutBack_550
+  - first:
+      213: 2645524976887190293
+    second: FireWithoutBack_551
+  - first:
+      213: 2911792259809575243
+    second: FireWithoutBack_552
+  - first:
+      213: -58227102278356160
+    second: FireWithoutBack_553
+  - first:
+      213: -4535155627161760076
+    second: FireWithoutBack_554
+  - first:
+      213: 7562168456926560858
+    second: FireWithoutBack_555
+  - first:
+      213: -7281467627259441796
+    second: FireWithoutBack_556
+  - first:
+      213: 2160393447675763966
+    second: FireWithoutBack_557
+  - first:
+      213: -4417520121069112957
+    second: FireWithoutBack_558
+  - first:
+      213: 8128217828839110971
+    second: FireWithoutBack_559
+  - first:
+      213: 4108436139833821795
+    second: FireWithoutBack_560
+  - first:
+      213: -2094170601902425654
+    second: FireWithoutBack_561
+  - first:
+      213: -1478252385775693015
+    second: FireWithoutBack_562
+  - first:
+      213: -3803032637955878066
+    second: FireWithoutBack_563
+  - first:
+      213: 6284406031718337887
+    second: FireWithoutBack_564
+  - first:
+      213: 3929157876167239138
+    second: FireWithoutBack_565
+  - first:
+      213: -5726935949507237634
+    second: FireWithoutBack_566
+  - first:
+      213: 557794249988153928
+    second: FireWithoutBack_567
+  - first:
+      213: -1155107103418382737
+    second: FireWithoutBack_568
+  - first:
+      213: -1509548921713284283
+    second: FireWithoutBack_569
+  - first:
+      213: -5602305670061839249
+    second: FireWithoutBack_570
+  - first:
+      213: -3239276030347774963
+    second: FireWithoutBack_571
+  - first:
+      213: -8567218268014477143
+    second: FireWithoutBack_572
+  - first:
+      213: -6075061350553623637
+    second: FireWithoutBack_573
+  - first:
+      213: 2688292771899065692
+    second: FireWithoutBack_574
+  - first:
+      213: -8578851268450614916
+    second: FireWithoutBack_575
+  - first:
+      213: 1437611832535202632
+    second: FireWithoutBack_576
+  - first:
+      213: -2140565167465795607
+    second: FireWithoutBack_577
+  - first:
+      213: -7772834898344356483
+    second: FireWithoutBack_578
+  - first:
+      213: -3326121316606078869
+    second: FireWithoutBack_579
+  - first:
+      213: 4311882587124759628
+    second: FireWithoutBack_580
+  - first:
+      213: 6578352095515454195
+    second: FireWithoutBack_581
+  - first:
+      213: -4052095142442778765
+    second: FireWithoutBack_582
+  - first:
+      213: -765378903875376968
+    second: FireWithoutBack_583
+  - first:
+      213: -49350987022524077
+    second: FireWithoutBack_584
+  - first:
+      213: 1122634378384989003
+    second: FireWithoutBack_585
+  - first:
+      213: 99129308968012194
+    second: FireWithoutBack_586
+  - first:
+      213: -2008188784939553358
+    second: FireWithoutBack_587
+  - first:
+      213: -7194131711514571914
+    second: FireWithoutBack_588
+  - first:
+      213: 8436874542739389599
+    second: FireWithoutBack_589
+  - first:
+      213: -7810306007682748653
+    second: FireWithoutBack_590
+  - first:
+      213: 1149727274928546224
+    second: FireWithoutBack_591
+  - first:
+      213: 3353976262676511086
+    second: FireWithoutBack_592
+  - first:
+      213: -3707956023164461581
+    second: FireWithoutBack_593
+  - first:
+      213: 1395052023286147717
+    second: FireWithoutBack_594
+  - first:
+      213: 5531519630240787055
+    second: FireWithoutBack_595
+  - first:
+      213: 7609451134610459324
+    second: FireWithoutBack_596
+  - first:
+      213: 4146688899920973471
+    second: FireWithoutBack_597
+  - first:
+      213: 6688940987212790171
+    second: FireWithoutBack_598
+  - first:
+      213: 8618518789465915421
+    second: FireWithoutBack_599
+  - first:
+      213: -3842846341506420085
+    second: FireWithoutBack_600
+  - first:
+      213: -6573521777015766681
+    second: FireWithoutBack_601
+  - first:
+      213: -177633237074073261
+    second: FireWithoutBack_602
+  - first:
+      213: -6657576486335114575
+    second: FireWithoutBack_603
+  - first:
+      213: 2084015412808778869
+    second: FireWithoutBack_604
+  - first:
+      213: -2419573039323851877
+    second: FireWithoutBack_605
+  - first:
+      213: -2007327009764842747
+    second: FireWithoutBack_606
+  - first:
+      213: 6366568739561041422
+    second: FireWithoutBack_607
+  - first:
+      213: -4982305681078053199
+    second: FireWithoutBack_608
+  - first:
+      213: -8334313196458493043
+    second: FireWithoutBack_609
+  - first:
+      213: 3296301957146573500
+    second: FireWithoutBack_610
+  - first:
+      213: 3331955820862057634
+    second: FireWithoutBack_611
+  - first:
+      213: -3824435439787382780
+    second: FireWithoutBack_612
+  - first:
+      213: 8582846831114860363
+    second: FireWithoutBack_613
+  - first:
+      213: -16354454830393884
+    second: FireWithoutBack_614
+  - first:
+      213: -5068143486818141758
+    second: FireWithoutBack_615
+  - first:
+      213: -5199627826558735962
+    second: FireWithoutBack_616
+  - first:
+      213: -8420893386680809676
+    second: FireWithoutBack_617
+  - first:
+      213: -4098908635740785071
+    second: FireWithoutBack_618
+  - first:
+      213: 8827274339470815490
+    second: FireWithoutBack_619
+  - first:
+      213: -9183008616157537510
+    second: FireWithoutBack_620
+  - first:
+      213: -9209468076083429503
+    second: FireWithoutBack_621
+  - first:
+      213: -3504382125673466436
+    second: FireWithoutBack_622
+  - first:
+      213: 6890210709100151426
+    second: FireWithoutBack_623
+  - first:
+      213: -6092615898626569309
+    second: FireWithoutBack_624
+  - first:
+      213: -1268075118091755459
+    second: FireWithoutBack_625
+  - first:
+      213: 1488866176301546846
+    second: FireWithoutBack_626
+  - first:
+      213: -2357304547320066345
+    second: FireWithoutBack_627
+  - first:
+      213: -8778770479474492415
+    second: FireWithoutBack_628
+  - first:
+      213: -986966150825957514
+    second: FireWithoutBack_629
+  - first:
+      213: 5231494421317614687
+    second: FireWithoutBack_630
+  - first:
+      213: -4304105646343725344
+    second: FireWithoutBack_631
+  - first:
+      213: 9089861481507746820
+    second: FireWithoutBack_632
+  - first:
+      213: -5587992775806493386
+    second: FireWithoutBack_633
+  - first:
+      213: -7234839706464891986
+    second: FireWithoutBack_634
+  - first:
+      213: -2780568371438948123
+    second: FireWithoutBack_635
+  - first:
+      213: -138944977645301204
+    second: FireWithoutBack_636
+  - first:
+      213: -4849827155061847421
+    second: FireWithoutBack_637
+  - first:
+      213: 7175987149086909916
+    second: FireWithoutBack_638
+  - first:
+      213: -2169907753985482400
+    second: FireWithoutBack_639
+  - first:
+      213: -7600700252586631555
+    second: FireWithoutBack_640
+  - first:
+      213: -41155796516954039
+    second: FireWithoutBack_641
+  - first:
+      213: -6579649206845569528
+    second: FireWithoutBack_642
+  - first:
+      213: 885360672006813056
+    second: FireWithoutBack_643
+  - first:
+      213: -9181097676976863211
+    second: FireWithoutBack_644
+  - first:
+      213: -6822845960107190354
+    second: FireWithoutBack_645
+  - first:
+      213: 448941654539827291
+    second: FireWithoutBack_646
+  - first:
+      213: -5617879238274119535
+    second: FireWithoutBack_647
+  - first:
+      213: -4122287610331362278
+    second: FireWithoutBack_648
+  - first:
+      213: -9172779594042592009
+    second: FireWithoutBack_649
+  - first:
+      213: 2188783743843475467
+    second: FireWithoutBack_650
+  - first:
+      213: 6981868840077473241
+    second: FireWithoutBack_651
+  - first:
+      213: 5527988729073029630
+    second: FireWithoutBack_652
+  - first:
+      213: 6310705782670872180
+    second: FireWithoutBack_653
+  - first:
+      213: -5965476141225168659
+    second: FireWithoutBack_654
+  - first:
+      213: 6258204173340804620
+    second: FireWithoutBack_655
+  - first:
+      213: 840453096520497207
+    second: FireWithoutBack_656
+  - first:
+      213: -1919288132069735572
+    second: FireWithoutBack_657
+  - first:
+      213: 8576996473129775746
+    second: FireWithoutBack_658
+  - first:
+      213: -7821389297769471783
+    second: FireWithoutBack_659
+  - first:
+      213: 4249037426888852106
+    second: FireWithoutBack_660
+  - first:
+      213: -1797621589084141228
+    second: FireWithoutBack_661
+  - first:
+      213: 4581260203957562557
+    second: FireWithoutBack_662
+  - first:
+      213: 5975238597755783799
+    second: FireWithoutBack_663
+  - first:
+      213: 666947141768941920
+    second: FireWithoutBack_664
+  - first:
+      213: 7483815933547883051
+    second: FireWithoutBack_665
+  - first:
+      213: 2201798409397785418
+    second: FireWithoutBack_666
+  - first:
+      213: 6457571843952580882
+    second: FireWithoutBack_667
+  - first:
+      213: -7517711202362156539
+    second: FireWithoutBack_668
+  - first:
+      213: 2779129155307613109
+    second: FireWithoutBack_669
+  - first:
+      213: 5505973349539732356
+    second: FireWithoutBack_670
+  - first:
+      213: 1650781479377970179
+    second: FireWithoutBack_671
+  - first:
+      213: 8501861559962098272
+    second: FireWithoutBack_672
+  - first:
+      213: 7930926023377889298
+    second: FireWithoutBack_673
+  - first:
+      213: -2066013341493780524
+    second: FireWithoutBack_674
+  - first:
+      213: -2466341257521796016
+    second: FireWithoutBack_675
+  - first:
+      213: -7293657518105155664
+    second: FireWithoutBack_676
+  - first:
+      213: 288021348916499169
+    second: FireWithoutBack_677
+  - first:
+      213: 5432617284936447835
+    second: FireWithoutBack_678
+  - first:
+      213: 7384372248412232323
+    second: FireWithoutBack_679
+  - first:
+      213: -5260835273797075052
+    second: FireWithoutBack_680
+  - first:
+      213: 286975813640596147
+    second: FireWithoutBack_681
+  - first:
+      213: -7812891199761362815
+    second: FireWithoutBack_682
+  - first:
+      213: 7054156367547013385
+    second: FireWithoutBack_683
+  - first:
+      213: 7494591419714899896
+    second: FireWithoutBack_684
+  - first:
+      213: 3010659361388108323
+    second: FireWithoutBack_685
+  - first:
+      213: 5501489733285217160
+    second: FireWithoutBack_686
+  - first:
+      213: -3933912528268323354
+    second: FireWithoutBack_687
+  - first:
+      213: 7337680340013907560
+    second: FireWithoutBack_688
+  - first:
+      213: 4065715313938990377
+    second: FireWithoutBack_689
+  - first:
+      213: -3231925621375125267
+    second: FireWithoutBack_690
+  - first:
+      213: 1723486537626667734
+    second: FireWithoutBack_691
+  - first:
+      213: -1846557320828284001
+    second: FireWithoutBack_692
+  - first:
+      213: -3715158352632315347
+    second: FireWithoutBack_693
+  - first:
+      213: 927526135308549394
+    second: FireWithoutBack_694
+  - first:
+      213: -6316250618426034440
+    second: FireWithoutBack_695
+  - first:
+      213: 4500028391763013908
+    second: FireWithoutBack_696
+  - first:
+      213: 1154684263898323718
+    second: FireWithoutBack_697
+  - first:
+      213: 1376727247076951553
+    second: FireWithoutBack_698
+  - first:
+      213: 5081119874211653793
+    second: FireWithoutBack_699
+  - first:
+      213: 3755701500515031468
+    second: FireWithoutBack_700
+  - first:
+      213: -7911181199711751326
+    second: FireWithoutBack_701
+  - first:
+      213: 3381242110706289075
+    second: FireWithoutBack_702
+  - first:
+      213: 3335522454867093971
+    second: FireWithoutBack_703
+  - first:
+      213: 1306126711901564454
+    second: FireWithoutBack_704
+  - first:
+      213: 7536358718983322587
+    second: FireWithoutBack_705
+  - first:
+      213: 8080570704933438845
+    second: FireWithoutBack_706
+  - first:
+      213: -7232958143505399003
+    second: FireWithoutBack_707
+  - first:
+      213: 6752463477493348858
+    second: FireWithoutBack_708
+  - first:
+      213: -2543510292341534363
+    second: FireWithoutBack_709
+  - first:
+      213: 4744947024137468565
+    second: FireWithoutBack_710
+  - first:
+      213: 3934163687728985068
+    second: FireWithoutBack_711
+  - first:
+      213: 3388082907043808654
+    second: FireWithoutBack_712
+  - first:
+      213: -1798728589184096222
+    second: FireWithoutBack_713
+  - first:
+      213: 8548583046404157952
+    second: FireWithoutBack_714
+  - first:
+      213: 149176485839618700
+    second: FireWithoutBack_715
+  - first:
+      213: 2236870606926695298
+    second: FireWithoutBack_716
+  - first:
+      213: -4083256922592139740
+    second: FireWithoutBack_717
+  - first:
+      213: 4534910290759382617
+    second: FireWithoutBack_718
+  - first:
+      213: -2947536477971496164
+    second: FireWithoutBack_719
+  - first:
+      213: 3738256492144509184
+    second: FireWithoutBack_720
+  - first:
+      213: -9023584534647022528
+    second: FireWithoutBack_721
+  - first:
+      213: -1961275796144978947
+    second: FireWithoutBack_722
+  - first:
+      213: 8661314149219790566
+    second: FireWithoutBack_723
+  - first:
+      213: -9030586037850584352
+    second: FireWithoutBack_724
+  - first:
+      213: 8217262836977800628
+    second: FireWithoutBack_725
+  - first:
+      213: 8760420852642367175
+    second: FireWithoutBack_726
+  - first:
+      213: -8453038199417748023
+    second: FireWithoutBack_727
+  - first:
+      213: -3799429510221256257
+    second: FireWithoutBack_728
+  - first:
+      213: -1509069008645485546
+    second: FireWithoutBack_729
+  - first:
+      213: -7833767841942354877
+    second: FireWithoutBack_730
+  - first:
+      213: 6329464848302795376
+    second: FireWithoutBack_731
+  - first:
+      213: 7178060269365881242
+    second: FireWithoutBack_732
+  - first:
+      213: 2939544686059377446
+    second: FireWithoutBack_733
+  - first:
+      213: 5610859166346187293
+    second: FireWithoutBack_734
+  - first:
+      213: -830739009102087192
+    second: FireWithoutBack_735
+  - first:
+      213: 5220159174494681954
+    second: FireWithoutBack_736
+  - first:
+      213: -6945462562065814577
+    second: FireWithoutBack_737
+  - first:
+      213: -9077458834270752447
+    second: FireWithoutBack_738
+  - first:
+      213: 725987028926799509
+    second: FireWithoutBack_739
+  - first:
+      213: 3807144767115712854
+    second: FireWithoutBack_740
+  - first:
+      213: -7490171079811338982
+    second: FireWithoutBack_741
+  - first:
+      213: -500507777880354795
+    second: FireWithoutBack_742
+  - first:
+      213: 4481588602481833349
+    second: FireWithoutBack_743
+  - first:
+      213: -2396096111597686093
+    second: FireWithoutBack_744
+  - first:
+      213: 5445774655757922053
+    second: FireWithoutBack_745
+  - first:
+      213: -735669677066554338
+    second: FireWithoutBack_746
+  - first:
+      213: 8814336764700918005
+    second: FireWithoutBack_747
+  - first:
+      213: 846607453105008698
+    second: FireWithoutBack_748
+  - first:
+      213: -6656816678634657709
+    second: FireWithoutBack_749
+  - first:
+      213: -2357258879675786505
+    second: FireWithoutBack_750
+  - first:
+      213: -5733702560436651610
+    second: FireWithoutBack_751
+  - first:
+      213: 7126159766115344692
+    second: FireWithoutBack_752
+  - first:
+      213: 1660101347260926229
+    second: FireWithoutBack_753
+  - first:
+      213: -1062011145481343292
+    second: FireWithoutBack_754
+  - first:
+      213: 815216045793387657
+    second: FireWithoutBack_755
+  - first:
+      213: -8024506572035651278
+    second: FireWithoutBack_756
+  - first:
+      213: -8820052449154741677
+    second: FireWithoutBack_757
+  - first:
+      213: -6982336691632328308
+    second: FireWithoutBack_758
+  - first:
+      213: 5399654469058144718
+    second: FireWithoutBack_759
+  - first:
+      213: 4580813934338419509
+    second: FireWithoutBack_760
+  - first:
+      213: 2393813742880721717
+    second: FireWithoutBack_761
+  - first:
+      213: -1933570789271504222
+    second: FireWithoutBack_762
+  - first:
+      213: 6887966944785614466
+    second: FireWithoutBack_763
+  - first:
+      213: -5861333712578673031
+    second: FireWithoutBack_764
+  - first:
+      213: -7157479883700171167
+    second: FireWithoutBack_765
+  - first:
+      213: 4369170158874088185
+    second: FireWithoutBack_766
+  - first:
+      213: 481272324603082261
+    second: FireWithoutBack_767
+  - first:
+      213: -3447411743416724522
+    second: FireWithoutBack_768
+  - first:
+      213: 761460319844019405
+    second: FireWithoutBack_769
+  - first:
+      213: 3685470787188658783
+    second: FireWithoutBack_770
+  - first:
+      213: -2120826112763252197
+    second: FireWithoutBack_771
+  - first:
+      213: 7700365065850703838
+    second: FireWithoutBack_772
+  - first:
+      213: -2210325609684615846
+    second: FireWithoutBack_773
+  - first:
+      213: -1393832705756960810
+    second: FireWithoutBack_774
+  - first:
+      213: 3477210229111553881
+    second: FireWithoutBack_775
+  - first:
+      213: 7410230052293796390
+    second: FireWithoutBack_776
+  - first:
+      213: 7262186061326415748
+    second: FireWithoutBack_777
+  - first:
+      213: -2159344528736213729
+    second: FireWithoutBack_778
+  - first:
+      213: 1240913636719353826
+    second: FireWithoutBack_779
+  - first:
+      213: -4676867231990674280
+    second: FireWithoutBack_780
+  - first:
+      213: 8532644555358148238
+    second: FireWithoutBack_781
+  - first:
+      213: 356057038329518459
+    second: FireWithoutBack_782
+  - first:
+      213: -1269839407874830771
+    second: FireWithoutBack_783
+  - first:
+      213: 6574765197414927199
+    second: FireWithoutBack_784
+  - first:
+      213: -6822833518218834328
+    second: FireWithoutBack_785
+  - first:
+      213: -141335225742640483
+    second: FireWithoutBack_786
+  - first:
+      213: -4559711893977846853
+    second: FireWithoutBack_787
+  - first:
+      213: -7563946637582838040
+    second: FireWithoutBack_788
+  - first:
+      213: 1256968350199464767
+    second: FireWithoutBack_789
+  - first:
+      213: -138097433676655060
+    second: FireWithoutBack_790
+  - first:
+      213: -8898183283368911094
+    second: FireWithoutBack_791
+  - first:
+      213: 3920354520094692201
+    second: FireWithoutBack_792
+  - first:
+      213: -7339276156927151224
+    second: FireWithoutBack_793
+  - first:
+      213: -3842661243093690107
+    second: FireWithoutBack_794
+  - first:
+      213: 2977051682338672985
+    second: FireWithoutBack_795
+  - first:
+      213: -4051016917852870181
+    second: FireWithoutBack_796
+  - first:
+      213: -5254617625868969921
+    second: FireWithoutBack_797
+  - first:
+      213: -4736353993086822759
+    second: FireWithoutBack_798
+  - first:
+      213: 1909722877664744093
+    second: FireWithoutBack_799
+  - first:
+      213: 6359043893180752377
+    second: FireWithoutBack_800
+  - first:
+      213: -7447571414576695891
+    second: FireWithoutBack_801
+  - first:
+      213: -5358556683600237037
+    second: FireWithoutBack_802
+  - first:
+      213: -903639930801717686
+    second: FireWithoutBack_803
+  - first:
+      213: 186189713484829503
+    second: FireWithoutBack_804
+  - first:
+      213: 4840177832728299112
+    second: FireWithoutBack_805
+  - first:
+      213: -8753133130819245977
+    second: FireWithoutBack_806
+  - first:
+      213: 4781685589271524480
+    second: FireWithoutBack_807
+  - first:
+      213: 6737735530745040286
+    second: FireWithoutBack_808
+  - first:
+      213: 2221068417454376637
+    second: FireWithoutBack_809
+  - first:
+      213: 11665523107586058
+    second: FireWithoutBack_810
+  - first:
+      213: -8369737871438867092
+    second: FireWithoutBack_811
+  - first:
+      213: 1115659710729114878
+    second: FireWithoutBack_812
+  - first:
+      213: -8180275358663971584
+    second: FireWithoutBack_813
+  - first:
+      213: -1291544946513234035
+    second: FireWithoutBack_814
+  - first:
+      213: -4576712302753891973
+    second: FireWithoutBack_815
+  - first:
+      213: -2747577430664883609
+    second: FireWithoutBack_816
+  - first:
+      213: -2390794462476918241
+    second: FireWithoutBack_817
+  - first:
+      213: 8155763430242526932
+    second: FireWithoutBack_818
+  - first:
+      213: -85244027704243986
+    second: FireWithoutBack_819
+  - first:
+      213: 3595509714322778919
+    second: FireWithoutBack_820
+  - first:
+      213: -4581480824959425256
+    second: FireWithoutBack_821
+  - first:
+      213: -3109333562150079118
+    second: FireWithoutBack_822
+  - first:
+      213: 1007793808779416560
+    second: FireWithoutBack_823
+  - first:
+      213: -5819745234366950378
+    second: FireWithoutBack_824
+  - first:
+      213: 5783840831691060515
+    second: FireWithoutBack_825
+  - first:
+      213: 7303968439441111786
+    second: FireWithoutBack_826
+  - first:
+      213: -7905944642499310898
+    second: FireWithoutBack_827
+  - first:
+      213: -1937179285997848945
+    second: FireWithoutBack_828
+  - first:
+      213: -5456086165780543257
+    second: FireWithoutBack_829
+  - first:
+      213: -1292247858120663768
+    second: FireWithoutBack_830
+  - first:
+      213: 7322290095606444124
+    second: FireWithoutBack_831
+  - first:
+      213: 7638820336752598993
+    second: FireWithoutBack_832
+  - first:
+      213: -1142654287820067117
+    second: FireWithoutBack_833
+  - first:
+      213: -5593723722726390560
+    second: FireWithoutBack_0
+  - first:
+      213: -1606853672269324520
+    second: FireWithoutBack_1
+  - first:
+      213: 9127561375433056056
+    second: FireWithoutBack_2
+  - first:
+      213: -188854099514193849
+    second: FireWithoutBack_3
+  - first:
+      213: 2330222965520432245
+    second: FireWithoutBack_4
+  - first:
+      213: 223136306591686857
+    second: FireWithoutBack_5
+  - first:
+      213: 4517024252253595624
+    second: FireWithoutBack_6
+  - first:
+      213: 2554200985950862918
+    second: FireWithoutBack_7
+  - first:
+      213: -6839061312055483320
+    second: FireWithoutBack_8
+  - first:
+      213: 4628818687561254339
+    second: FireWithoutBack_9
+  - first:
+      213: 1296940414906974493
+    second: FireWithoutBack_10
+  - first:
+      213: -1059249259845328559
+    second: FireWithoutBack_11
+  - first:
+      213: 7099441576069095653
+    second: FireWithoutBack_12
+  - first:
+      213: -8779626711631204760
+    second: FireWithoutBack_13
+  - first:
+      213: 8807789053848771671
+    second: FireWithoutBack_14
+  - first:
+      213: -5398287165674344165
+    second: FireWithoutBack_15
+  - first:
+      213: 5250265574294488244
+    second: FireWithoutBack_16
+  - first:
+      213: 1873609956399658206
+    second: FireWithoutBack_17
+  - first:
+      213: -1623151288414725780
+    second: FireWithoutBack_18
+  - first:
+      213: -5680074867386534
+    second: FireWithoutBack_19
+  - first:
+      213: 2294174261883748881
+    second: FireWithoutBack_20
+  - first:
+      213: -6667468475231005327
+    second: FireWithoutBack_21
+  - first:
+      213: -607660935928943307
+    second: FireWithoutBack_22
+  - first:
+      213: -8540209716762099596
+    second: FireWithoutBack_23
+  - first:
+      213: -7201707685989038648
+    second: FireWithoutBack_24
+  - first:
+      213: -8818295831828033428
+    second: FireWithoutBack_25
+  - first:
+      213: 668911493739804352
+    second: FireWithoutBack_26
+  - first:
+      213: -1922907282428977838
+    second: FireWithoutBack_27
+  - first:
+      213: 2558205397279763416
+    second: FireWithoutBack_28
+  - first:
+      213: -4293772099190584731
+    second: FireWithoutBack_29
+  - first:
+      213: -389570025432327944
+    second: FireWithoutBack_30
+  - first:
+      213: -4464972514425703567
+    second: FireWithoutBack_31
+  - first:
+      213: -1108416255571011849
+    second: FireWithoutBack_32
+  - first:
+      213: 2731663618384760231
+    second: FireWithoutBack_33
+  - first:
+      213: -8879830438940307063
+    second: FireWithoutBack_34
+  - first:
+      213: 6193011409002045633
+    second: FireWithoutBack_35
+  - first:
+      213: -6502109308193778961
+    second: FireWithoutBack_36
+  - first:
+      213: -958285396813882269
+    second: FireWithoutBack_37
+  - first:
+      213: -24437731100310635
+    second: FireWithoutBack_38
+  - first:
+      213: 6883334418288365402
+    second: FireWithoutBack_39
+  - first:
+      213: 603120706146375362
+    second: FireWithoutBack_40
+  - first:
+      213: 2387923490546155493
+    second: FireWithoutBack_41
+  - first:
+      213: 8746365415046194468
+    second: FireWithoutBack_42
+  - first:
+      213: -2999412803980140022
+    second: FireWithoutBack_43
+  - first:
+      213: 4281663701142633238
+    second: FireWithoutBack_44
+  - first:
+      213: 753720735745093993
+    second: FireWithoutBack_45
+  - first:
+      213: 9019297674142547367
+    second: FireWithoutBack_46
+  - first:
+      213: 6018644915914550983
+    second: FireWithoutBack_47
+  - first:
+      213: -3390795434592781333
+    second: FireWithoutBack_48
+  - first:
+      213: 1676405001807993983
+    second: FireWithoutBack_49
+  - first:
+      213: 5712076058077904713
+    second: FireWithoutBack_50
+  - first:
+      213: 3524586432456731294
+    second: FireWithoutBack_51
+  - first:
+      213: 3764820133224767167
+    second: FireWithoutBack_52
+  - first:
+      213: 3308917513324655249
+    second: FireWithoutBack_53
+  - first:
+      213: -5783421967566474916
+    second: FireWithoutBack_54
+  - first:
+      213: 918387665532204047
+    second: FireWithoutBack_55
+  - first:
+      213: 3117979982188882331
+    second: FireWithoutBack_56
+  - first:
+      213: -4200820761989349904
+    second: FireWithoutBack_57
+  - first:
+      213: 3883492073108861305
+    second: FireWithoutBack_58
+  - first:
+      213: 5119351286632751072
+    second: FireWithoutBack_59
+  - first:
+      213: 4347623781708230386
+    second: FireWithoutBack_60
+  - first:
+      213: 7058254980807088683
+    second: FireWithoutBack_61
+  - first:
+      213: 4443079817773676233
+    second: FireWithoutBack_62
+  - first:
+      213: -1645772766854410502
+    second: FireWithoutBack_63
+  - first:
+      213: -9148333378095481206
+    second: FireWithoutBack_64
+  - first:
+      213: -227382283870154019
+    second: FireWithoutBack_65
+  - first:
+      213: -4897167259371572756
+    second: FireWithoutBack_66
+  - first:
+      213: -2386151272713475977
+    second: FireWithoutBack_67
+  - first:
+      213: 3245452595685148319
+    second: FireWithoutBack_68
+  - first:
+      213: 606036298896414880
+    second: FireWithoutBack_69
+  - first:
+      213: -7454412477614491596
+    second: FireWithoutBack_70
+  - first:
+      213: -8240441696576386415
+    second: FireWithoutBack_71
+  - first:
+      213: 8084465165767471858
+    second: FireWithoutBack_72
+  - first:
+      213: 5926270037409834008
+    second: FireWithoutBack_73
+  - first:
+      213: 6533895892360234809
+    second: FireWithoutBack_74
+  - first:
+      213: 8895469029934839156
+    second: FireWithoutBack_75
+  - first:
+      213: 4446388158241209699
+    second: FireWithoutBack_76
+  - first:
+      213: -6657962228652632173
+    second: FireWithoutBack_77
+  - first:
+      213: -8355860866455263424
+    second: FireWithoutBack_78
+  - first:
+      213: -4725010301102755963
+    second: FireWithoutBack_79
+  - first:
+      213: -6870249260368681591
+    second: FireWithoutBack_80
+  - first:
+      213: -6908301799659193786
+    second: FireWithoutBack_81
+  - first:
+      213: -2075908400348458232
+    second: FireWithoutBack_82
+  - first:
+      213: 7704182369598194888
+    second: FireWithoutBack_83
+  - first:
+      213: -7064707762499851323
+    second: FireWithoutBack_84
+  - first:
+      213: -9053972501809984855
+    second: FireWithoutBack_85
+  - first:
+      213: -7074164082494050954
+    second: FireWithoutBack_86
+  - first:
+      213: 961910097074438826
+    second: FireWithoutBack_87
+  - first:
+      213: -474017608413676708
+    second: FireWithoutBack_88
+  - first:
+      213: 5069945393185100402
+    second: FireWithoutBack_89
+  - first:
+      213: -527046640778731932
+    second: FireWithoutBack_90
+  - first:
+      213: 2493628861085809967
+    second: FireWithoutBack_91
+  - first:
+      213: 7929466648757018054
+    second: FireWithoutBack_92
+  - first:
+      213: 222417463955079033
+    second: FireWithoutBack_93
+  - first:
+      213: -1291833335764380238
+    second: FireWithoutBack_94
+  - first:
+      213: 4004989462892397183
+    second: FireWithoutBack_95
+  - first:
+      213: 1526160023094376387
+    second: FireWithoutBack_96
+  - first:
+      213: -3655276805837270142
+    second: FireWithoutBack_97
+  - first:
+      213: 8155363270196984600
+    second: FireWithoutBack_98
+  - first:
+      213: -7417741710707871088
+    second: FireWithoutBack_99
+  - first:
+      213: -7681920153450762770
+    second: FireWithoutBack_100
+  - first:
+      213: -6419812620212703811
+    second: FireWithoutBack_101
+  - first:
+      213: 5476043914250128638
+    second: FireWithoutBack_102
+  - first:
+      213: 5526014794174222897
+    second: FireWithoutBack_103
+  - first:
+      213: 5572233940577049168
+    second: FireWithoutBack_104
+  - first:
+      213: -8205283551718091381
+    second: FireWithoutBack_105
+  - first:
+      213: -3997864557840608513
+    second: FireWithoutBack_106
+  - first:
+      213: -6855947699397801797
+    second: FireWithoutBack_107
+  - first:
+      213: -7419105339203803814
+    second: FireWithoutBack_108
+  - first:
+      213: 2777568711389054064
+    second: FireWithoutBack_109
+  - first:
+      213: 6476985534052480190
+    second: FireWithoutBack_110
+  - first:
+      213: -4858768028455430773
+    second: FireWithoutBack_111
+  - first:
+      213: 3784501480954214632
+    second: FireWithoutBack_112
+  - first:
+      213: -8514793391861560840
+    second: FireWithoutBack_113
+  - first:
+      213: -8708970831763756740
+    second: FireWithoutBack_114
+  - first:
+      213: -6265238533998788592
+    second: FireWithoutBack_115
+  - first:
+      213: -1013747538095245791
+    second: FireWithoutBack_116
+  - first:
+      213: 6203693766861587187
+    second: FireWithoutBack_117
+  - first:
+      213: -7031677921118838577
+    second: FireWithoutBack_118
+  - first:
+      213: 3096936717566082083
+    second: FireWithoutBack_119
+  - first:
+      213: 2326860860427380613
+    second: FireWithoutBack_120
+  - first:
+      213: 2771741949700470672
+    second: FireWithoutBack_121
+  - first:
+      213: 4337161060974321995
+    second: FireWithoutBack_122
+  - first:
+      213: 7185791934024486159
+    second: FireWithoutBack_123
+  - first:
+      213: -286698919136932329
+    second: FireWithoutBack_124
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FireWithoutBack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8112
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4c73739e91f52b0800000000000000
+      internalID: -5593723722726390560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 8112
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81fda5a391f43b9e0800000000000000
+      internalID: -1606853672269324520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 8112
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f534806bc9bae70800000000000000
+      internalID: 9127561375433056056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 8112
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7488414723e016df0800000000000000
+      internalID: -188854099514193849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 8112
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c7d4be07d965020800000000000000
+      internalID: 2330222965520432245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7774
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0e3e2e94db81300800000000000000
+      internalID: 223136306591686857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 7774
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7666d00a1bfae30800000000000000
+      internalID: 4517024252253595624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_7
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 7774
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ebd849348527320800000000000000
+      internalID: 2554200985950862918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_8
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 7774
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844e0d9b8f5c611a0800000000000000
+      internalID: -6839061312055483320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_9
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 7774
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c547c1621edc3040800000000000000
+      internalID: 4628818687561254339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7436
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11c0659f68aff110800000000000000
+      internalID: 1296940414906974493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 7436
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151e25a096acc41f0800000000000000
+      internalID: -1059249259845328559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_12
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 7436
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0ec3dbf78468260800000000000000
+      internalID: 7099441576069095653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_13
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 7436
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ee0b0b500882680800000000000000
+      internalID: -8779626711631204760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_14
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 7436
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75cda339a7d8b3a70800000000000000
+      internalID: 8807789053848771671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7098
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b113e669c6e6515b0800000000000000
+      internalID: -5398287165674344165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_16
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 7098
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4094409b0bcd840800000000000000
+      internalID: 5250265574294488244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_17
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 7098
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed436da1456600a10800000000000000
+      internalID: 1873609956399658206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_18
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 7098
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c699255c0886979e0800000000000000
+      internalID: -1623151288414725780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_19
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 7098
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a575b338002dbeff0800000000000000
+      internalID: -5680074867386534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6760
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112cc6c065b86df10800000000000000
+      internalID: 2294174261883748881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_21
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 6760
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1759dbe5fb46873a0800000000000000
+      internalID: -6667468475231005327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_22
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 6760
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53de21a29972197f0800000000000000
+      internalID: -607660935928943307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_23
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 6760
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4704e05b2841b7980800000000000000
+      internalID: -8540209716762099596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_24
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 6760
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c54c6014056e0c90800000000000000
+      internalID: -7201707685989038648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6422
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60159b89ae1f9580800000000000000
+      internalID: -8818295831828033428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_26
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 6422
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c67982a573784900800000000000000
+      internalID: 668911493739804352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_27
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 6422
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d1fceb3067055e0800000000000000
+      internalID: -1922907282428977838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_28
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 6422
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbe85f3142908320800000000000000
+      internalID: 2558205397279763416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_29
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 6422
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a034176057964c0800000000000000
+      internalID: -4293772099190584731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6084
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f857fa3028f79af0800000000000000
+      internalID: -389570025432327944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 6084
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173f5c1972b3902c0800000000000000
+      internalID: -4464972514425703567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_32
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 6084
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6db67c94d1e90f0800000000000000
+      internalID: -1108416255571011849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_33
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 6084
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad8ea38691d8e520800000000000000
+      internalID: 2731663618384760231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_34
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 6084
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981134d534184c480800000000000000
+      internalID: -8879830438940307063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5746
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c02283801ff1f550800000000000000
+      internalID: 6193011409002045633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_36
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 5746
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2595aa80ed3c5a0800000000000000
+      internalID: -6502109308193778961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_37
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 5746
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36cd671428c73b2f0800000000000000
+      internalID: -958285396813882269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_38
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 5746
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59346a6530e29aff0800000000000000
+      internalID: -24437731100310635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_39
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 5746
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f4c481f24868f50800000000000000
+      internalID: 6883334418288365402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5408
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c699863617be5800800000000000000
+      internalID: 603120706146375362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_41
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 5408
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef70dc43cb932120800000000000000
+      internalID: 2387923490546155493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_42
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 5408
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42527973105516970800000000000000
+      internalID: 8746365415046194468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_43
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 5408
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02610442f1ff56d0800000000000000
+      internalID: -2999412803980140022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_44
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 5408
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b7a4273768b6b30800000000000000
+      internalID: 4281663701142633238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5070
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961bee90401c57a00800000000000000
+      internalID: 753720735745093993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_46
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 5070
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adf5c6c27bfa2d70800000000000000
+      internalID: 9019297674142547367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_47
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 5070
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce2c42b9a5868350800000000000000
+      internalID: 6018644915914550983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_48
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 5070
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebb417748971f0d0800000000000000
+      internalID: -3390795434592781333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_49
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 5070
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c14789779c34710800000000000000
+      internalID: 1676405001807993983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4732
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f3fb339ee554f40800000000000000
+      internalID: 5712076058077904713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_51
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 4732
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9aaebeafa8d9e030800000000000000
+      internalID: 3524586432456731294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_52
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 4732
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbed91cd6f35f3430800000000000000
+      internalID: 3764820133224767167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_53
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4732
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192f8cc62f2abed20800000000000000
+      internalID: 3308917513324655249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_54
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4732
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c517205cc582dbfa0800000000000000
+      internalID: -5783421967566474916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4394
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04b52a47b4cebc00800000000000000
+      internalID: 918387665532204047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_56
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 4394
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99a527264a454b20800000000000000
+      internalID: 3117979982188882331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_57
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 4394
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fdf98c16cfa3b5c0800000000000000
+      internalID: -4200820761989349904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_58
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4394
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971f2b1077fe4e530800000000000000
+      internalID: 3883492073108861305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_59
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4394
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef1f282fd69b0740800000000000000
+      internalID: 5119351286632751072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4056
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe62c57bccd55c30800000000000000
+      internalID: 4347623781708230386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_61
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 4056
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a53214285f3f160800000000000000
+      internalID: 7058254980807088683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_62
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 4056
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c67b17cd8df8ad30800000000000000
+      internalID: 4443079817773676233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_63
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4056
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe81a2636a0929e0800000000000000
+      internalID: -1645772766854410502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_64
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4056
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ef4c733479a0180800000000000000
+      internalID: -9148333378095481206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3718
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2d3bd740d28dcf0800000000000000
+      internalID: -227382283870154019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_66
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3718
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1fb7be254c90cb0800000000000000
+      internalID: -4897167259371572756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_67
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3718
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77821915f00b2eed0800000000000000
+      internalID: -2386151272713475977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_68
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3718
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96ce2dc0f92a0d20800000000000000
+      internalID: 3245452595685148319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_69
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3718
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a896bc8dc2196800800000000000000
+      internalID: 606036298896414880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3380
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4387c86c85b9c8890800000000000000
+      internalID: -7454412477614491596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_71
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3380
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a4f3bcfe114ad80800000000000000
+      internalID: -8240441696576386415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_72
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3380
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2f6942c3ac13070800000000000000
+      internalID: 8084465165767471858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_73
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3380
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814aad643375e3250800000000000000
+      internalID: 5926270037409834008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_74
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3380
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937048f22bf0daa50800000000000000
+      internalID: 6533895892360234809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3042
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47531c7d3fd037b70800000000000000
+      internalID: 8895469029934839156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_76
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3042
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d7871d87eb4bd30800000000000000
+      internalID: 4446388158241209699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_77
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3042
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3971131e0aa2a93a0800000000000000
+      internalID: -6657962228652632173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_78
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3042
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047a85e20d40a0c80800000000000000
+      internalID: -8355860866455263424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_79
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3042
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f65b25a246d6eb0800000000000000
+      internalID: -4725010301102755963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2704
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985a555a2b8f7a0a0800000000000000
+      internalID: -6870249260368681591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_81
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2704
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a3f1e6d18c020a0800000000000000
+      internalID: -6908301799659193786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_82
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2704
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8031bfafe44e033e0800000000000000
+      internalID: -2075908400348458232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_83
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2704
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c44ab0fb01caea60800000000000000
+      internalID: 7704182369598194888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_84
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2704
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb604e68bd15fd90800000000000000
+      internalID: -7064707762499851323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2366
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa0677caf3d95280800000000000000
+      internalID: -9053972501809984855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_86
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2366
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d6d1c5f3583dd90800000000000000
+      internalID: -7074164082494050954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_87
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2366
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2cbf90324695d00800000000000000
+      internalID: 961910097074438826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_88
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2366
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5bf8312f73fb69f0800000000000000
+      internalID: -474017608413676708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_89
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2366
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2721d6f29701c5640800000000000000
+      internalID: 5069945393185100402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2028
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e12546fdd8fa8f0800000000000000
+      internalID: -527046640778731932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_91
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2028
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d7ea2cc362b9220800000000000000
+      internalID: 2493628861085809967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_92
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2028
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd1879a7ef1b0e60800000000000000
+      internalID: 7929466648757018054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_93
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2028
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fb2ea418f261300800000000000000
+      internalID: 222417463955079033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_94
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2028
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b591c0fc6c721ee0800000000000000
+      internalID: -1291833335764380238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1690
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7242e872b4949730800000000000000
+      internalID: 4004989462892397183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_96
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1690
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c731fe74720e2510800000000000000
+      internalID: 1526160023094376387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_97
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1690
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28358509c19d54dc0800000000000000
+      internalID: -3655276805837270142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_98
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1690
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bfb5e6fabad2170800000000000000
+      internalID: 8155363270196984600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_99
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1690
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092b8a90733ee0990800000000000000
+      internalID: -7417741710707871088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1352
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed27ac2256546590800000000000000
+      internalID: -7681920153450762770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_101
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1352
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbde6af7f6e38e6a0800000000000000
+      internalID: -6419812620212703811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_102
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1352
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc815b3de0defb40800000000000000
+      internalID: 5476043914250128638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_103
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1352
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132de4e5d2950bc40800000000000000
+      internalID: 5526014794174222897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_104
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1352
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a5879fe3d845d40800000000000000
+      internalID: 5572233940577049168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1014
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85dc7a451af02e80800000000000000
+      internalID: -8205283551718091381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_106
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1014
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff259c1cd5bb488c0800000000000000
+      internalID: -3997864557840608513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_107
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1014
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8ccba44e7cad0a0800000000000000
+      internalID: -6855947699397801797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_108
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1014
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55ad89800b0a0990800000000000000
+      internalID: -7419105339203803814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_109
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1014
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074859dd608eb8620800000000000000
+      internalID: 2777568711389054064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 676
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4ba84d600e2e950800000000000000
+      internalID: 6476985534052480190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_111
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 676
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8593e19830329cb0800000000000000
+      internalID: -4858768028455430773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_112
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 676
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e83738bb00458430800000000000000
+      internalID: 3784501480954214632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_113
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 676
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f98f3ef58065d980800000000000000
+      internalID: -8514793391861560840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_114
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 676
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39ab7dab25832780800000000000000
+      internalID: -8708970831763756740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_115
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 338
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010c9eb7fb66d09a0800000000000000
+      internalID: -6265238533998788592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_116
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 338
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126f7e33cf17ee1f0800000000000000
+      internalID: -1013747538095245791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_117
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 338
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f20715cc92f71650800000000000000
+      internalID: 6203693766861587187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_118
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 338
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc021c8af267a6e90800000000000000
+      internalID: -7031677921118838577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_119
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 338
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32cf36e49878afa20800000000000000
+      internalID: 3096936717566082083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587a883df9baa4020800000000000000
+      internalID: 2326860860427380613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_121
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097f1f03e94377620800000000000000
+      internalID: 2771741949700470672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_122
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41e7057101b03c30800000000000000
+      internalID: 4337161060974321995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_123
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d856921bf09b360800000000000000
+      internalID: 7185791934024486159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWithoutBack_124
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 600
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71eca5f1ad0750cf0800000000000000
+      internalID: -286698919136932329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

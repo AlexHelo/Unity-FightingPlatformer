@@ -243,7 +243,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: -3316437661583186769, guid: be97c591e4eadc041bb0446675a8d29f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -269,18 +269,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coll: {fileID: 5014669111092515132}
-  moveSpeed: 7
+  moveSpeed: 8
   distance: 1
   jumpVelocity: 8
   fallMultiplier: 5
   lowJumpMultiplier: 4
   slideDown: -7
-  numJumps: 2
   jumpPushForce: 10
-  side: 1
   wallJumpLerp: 10
   wallJumpForce: 30
   dashSpeed: 10
+  numJumps: 2
   canMove: 1
   wallGrab: 0
   wallJumped: 0
@@ -329,15 +328,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47433d481463bee4b95fc062997fe819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeBtwAttack: 0.3
-  startTimeResetAttack: 0.6
   attackPos: {fileID: 5014669109695574237}
-  attackRange: 1.15
-  attackRange2: 1.2
-  attackRange3: 2
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 1024
+  startTimeBtwAttack: 0.3
+  startTimeResetAttack: 0.6
+  attackRange: 1.15
+  attackRange2: 1.2
+  attackRange3: 2
   damage: 10
 --- !u!95 &5014669111092515133
 Animator:
