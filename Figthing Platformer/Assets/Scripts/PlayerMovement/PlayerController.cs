@@ -24,16 +24,16 @@ using UnityEngine;
  *		
  *		F) AUXILIARY METHODS
  * 
- */ 
+ */
 
 public class PlayerController : MonoBehaviour
 {
-	//Components used for the main player
+    //Components used for the main player
     SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
     public Collision coll;
 
-	//Public values for all the movement used in the code
+    //Public values for all the movement used in the code
     public float moveSpeed = 5.0f;
     public float distance = 1f;
     public float jumpVelocity = 10f;
@@ -44,25 +44,25 @@ public class PlayerController : MonoBehaviour
     public float wallJumpLerp = 10f;
     public float wallJumpForce = 30f;
     public float dashSpeed = 20;
-	//counter for amount of jumps available for the player
-	public int numJumps = 2;
-	//Booleans for to determine different available movements
-	public bool canMove;
+    //counter for amount of jumps available for the player
+    public int numJumps = 2;
+    //Booleans for to determine different available movements
+    public bool canMove;
     public bool wallGrab;
     public bool wallJumped;
     public bool wallSlide;
     public bool isDashing;
     public bool hasDashed;
     public bool groundTouch;
-	private bool attackPos;
+    private bool attackPos;
 
-	//Game objects for the left position and right position of the hitbox
-	public GameObject attackPosMeleeLeft, attackPosMeleeRight;
-	//Game object determining the side his facing
+    //Game objects for the left position and right position of the hitbox
+    public GameObject attackPosMeleeLeft, attackPosMeleeRight;
+    //Game object determining the side his facing
     private GameObject CurrentAttackPos;
     //Animators used for the movements
     private Animator an;
-	//Attack Script
+    //Attack Script
     private PlayerAttack plA;
 
 
@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour
         float xRaw = Input.GetAxisRaw("Horizontal");
         float yRaw = Input.GetAxisRaw("Vertical");
 
-		/*
+        /*
 		 * KEY CODES FOR MOVEMENTS, JUMPS AND GRABS
 		 *		1) WALK METHOD
 		 *		2) JUMPING
@@ -96,60 +96,60 @@ public class PlayerController : MonoBehaviour
 		 *		4) WALL GRAB
 		 *		5) LINE 103: DASH
 		 */
-	
-		//Get the vector for the movement pressed and call the walk method
-		Vector2 dir = new Vector2(x, y);
-		Walk(dir);
-		//key code Better Jumping
-		if (Input.GetKeyDown(KeyCode.W) && numJumps > 0 && !coll.onWall)
+
+        //Get the vector for the movement pressed and call the walk method
+        Vector2 dir = new Vector2(x, y);
+        Walk(dir);
+        //key code Better Jumping
+        if (Input.GetKeyDown(KeyCode.W) && numJumps > 0 && !coll.onWall)
         {
             an.SetInteger("JumpNo", numJumps);
             Jump(Vector2.up);
             numJumps--;
         }
-		// key code for wall jumping
+        // key code for wall jumping
         if (Input.GetKeyDown(KeyCode.W) && coll.onWall)
         {
             WallJump();
 
         }
-		// key code for wall grab
-		if (Input.GetKey(KeyCode.E) && coll.onWall)
-		{
-			Debug.Log("WALL GRAB");
-			rb.velocity = new Vector2(rb.velocity.x, 0);
-		}
-		// key code for dash
-		if (Input.GetKeyDown(KeyCode.Space) && hasDashed == false && !coll.onGround)
-		{
-			if (xRaw != 0 || yRaw != 0)
-				Dash(xRaw, yRaw);
-			numJumps = 0;
-		}
-		/*
+        // key code for wall grab
+        if (Input.GetKey(KeyCode.E) && coll.onWall)
+        {
+            Debug.Log("WALL GRAB");
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+        }
+        // key code for dash
+        if (Input.GetKeyDown(KeyCode.Space) && hasDashed == false && !coll.onGround)
+        {
+            if (xRaw != 0 || yRaw != 0)
+                Dash(xRaw, yRaw);
+            numJumps = 0;
+        }
+        /*
 		 * 
 		 * Velocity control for player falling in different scenarios 
 		 *		
 		 */
-		if (rb.velocity.y < 0)
-		{
-			rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-		}
-		else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.W))
-		{
-			rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
-		}
-		/*
+        if (rb.velocity.y < 0)
+        {
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        }
+        else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.W))
+        {
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
+        /*
 		 * ANIMATIONS FOR PLAYER MOVEMENTS
 		 *		1) WALL GRAB ANIMATION
 		 *		2) JUMPS RESETS ANIMATIONS AND BOOLEAN CONTROLS
 		 *		3) JUMPS ANIMATIONS
 		 *		4) FALLING ANIMATION
 		 *		
-		 */ 
+		 */
 
-		//Animation for wall grab
-		if (coll.onWall)
+        //Animation for wall grab
+        if (coll.onWall)
         {
             an.SetBool("WallGrab", true);
         }
@@ -157,7 +157,7 @@ public class PlayerController : MonoBehaviour
         {
             an.SetBool("WallGrab", false);
         }
-		
+
         // jump reset animations/booleans
         if (coll.onGround)
         {
@@ -170,29 +170,29 @@ public class PlayerController : MonoBehaviour
             hasDashed = false;
             wallJumped = true;
         }
-		//jumping animations for double and single jump
-		if (!coll.onGround)
-		{
-			an.SetBool("Jumping", true);
-			an.SetBool("DoubleJump", true);
-			an.SetInteger("JumpNo", numJumps);
+        //jumping animations for double and single jump
+        if (!coll.onGround)
+        {
+            an.SetBool("Jumping", true);
+            an.SetBool("DoubleJump", true);
+            an.SetInteger("JumpNo", numJumps);
 
-			if (numJumps == 2)
-			{
-				numJumps = 1;
-			}
-			if (numJumps == 1)
-			{
-				an.SetBool("DoubleJump", true);
-			}
-			if (numJumps == 0)
-			{
-				an.SetBool("DoubleJump", false);
-			}
+            if (numJumps == 2)
+            {
+                numJumps = 1;
+            }
+            if (numJumps == 1)
+            {
+                an.SetBool("DoubleJump", true);
+            }
+            if (numJumps == 0)
+            {
+                an.SetBool("DoubleJump", false);
+            }
 
-		}
-		// falling animation 
-		if (!coll.onGround && rb.velocity.y < 0)
+        }
+        // falling animation 
+        if (!coll.onGround && rb.velocity.y < 0)
         {
             an.SetBool("Falling", true);
         }
@@ -202,7 +202,7 @@ public class PlayerController : MonoBehaviour
         }
         AttackCheck();
     }
-	/*
+    /*
 	 * METHODS FOR PLAYER MOVEMENTS (OUTSIDE UPDATE METHOD)
 	 *		1) DASH
 	 *		2) JUMPING
@@ -211,29 +211,29 @@ public class PlayerController : MonoBehaviour
 	 * 
 	 */
 
-	//private method for dash 
-	private void Dash(float x, float y)
-	{
+    //private method for dash 
+    private void Dash(float x, float y)
+    {
 
-		hasDashed = true;
+        hasDashed = true;
 
-		rb.velocity = Vector2.zero;
-		Vector2 dir = new Vector2(x, y);
+        rb.velocity = Vector2.zero;
+        Vector2 dir = new Vector2(x, y);
 
-		rb.velocity += dir.normalized * dashSpeed;
-		StartCoroutine(DashWait());
-	}
-	//private method for jumping
-	private void Jump(Vector2 dir)
-	{
+        rb.velocity += dir.normalized * dashSpeed;
+        StartCoroutine(DashWait());
+    }
+    //private method for jumping
+    private void Jump(Vector2 dir)
+    {
 
-		rb.velocity = new Vector2(rb.velocity.x, 0);
-		rb.velocity += dir * jumpVelocity;
-		Debug.Log("DO " + rb.velocity);
+        rb.velocity = new Vector2(rb.velocity.x, 0);
+        rb.velocity += dir * jumpVelocity;
+        Debug.Log("DO " + rb.velocity);
 
-	}
-	// private method for walk 
-	private void Walk(Vector2 dir)
+    }
+    // private method for walk 
+    private void Walk(Vector2 dir)
     {
         if (canMove == true)
         {
@@ -267,42 +267,41 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-	
-	//private method for wall jumping
-	private void WallJump()
-	{
-		StopCoroutine(DisableMovement(0));
-		StartCoroutine(DisableMovement(.1f));
-		Vector2 wallDir = coll.onRightWall ? Vector2.left : Vector2.right;
-		Jump(Vector2.up + wallDir);
-		wallJumped = true;
 
-	}
+    //private method for wall jumping
+    private void WallJump()
+    {
+        StopCoroutine(DisableMovement(0));
+        StartCoroutine(DisableMovement(.1f));
+        Vector2 wallDir = coll.onRightWall ? Vector2.left : Vector2.right;
+        Jump(Vector2.up + wallDir);
+        wallJumped = true;
+    }
 
 
-	/*
+    /*
 	 * IENUMERATORS FOR COUNTING TIME 
 	 *		1) DISABLE MOVEMENT
 	 *		2) DASH WAIT 
 	 *		3) GROUND DASH (USED INSIDE DASH AND WAIT)
 	 * 
-	 */ 
+	 */
 
-	// IEnumerator for disable movement on the wallJumpo method
-	IEnumerator DisableMovement(float time)
+    // IEnumerator for disable movement on the wallJumpo method
+    IEnumerator DisableMovement(float time)
     {
         canMove = false;
         yield return new WaitForSeconds(time);
         canMove = true;
     }
 
-	//IEnumarator for the private dash method
+    //IEnumarator for the private dash method
     IEnumerator DashWait()
     {
         GameObject.Find("Ghost").GetComponent<GhostTrail>().ShowGhost();
         //FindObjectOfType<GhostTrail>().ShowGhost();
         StartCoroutine(GroundDash());
-        
+
         rb.gravityScale = 0;
 
         wallJumped = true;
@@ -316,24 +315,24 @@ public class PlayerController : MonoBehaviour
         wallJumped = false;
         isDashing = false;
     }
-	//IEnumerator for the method IEnumerator in DashAndWait
-	IEnumerator GroundDash()
-	{
-		yield return new WaitForSeconds(.15f);
+    //IEnumerator for the method IEnumerator in DashAndWait
+    IEnumerator GroundDash()
+    {
+        yield return new WaitForSeconds(.15f);
 
-	}
+    }
 
-	/*
+    /*
 	 * AUXILIARY METHODS FOR THE SCRIPTS
 	 *		1) FLIP ATTACK 
 	 *		2) GET CURRENT ATTACK POSITION
 	 *		3) GET ATTACK POSITION
 	 *		4) KEY CODE FOR ATTACK CKECK
 	 * 
-	 */ 
+	 */
 
-	//Auxiliary private method to determine the position in which the main player is facing
-	private void flipAttack(bool t)
+    //Auxiliary private method to determine the position in which the main player is facing
+    private void flipAttack(bool t)
     {
         if (t)
         {
@@ -346,26 +345,26 @@ public class PlayerController : MonoBehaviour
             attackPos = false;
         }
     }
-	//Auxiliary public method to get the current attack position 
+    //Auxiliary public method to get the current attack position 
     public GameObject GetCurrentAttackPos()
     {
         return CurrentAttackPos;
     }
-	//Auxiliary public method to get the an attack position
+    //Auxiliary public method to get the an attack position
     public bool GetAttackPos()
     {
         return attackPos;
     }
 
-	//Auxiliary key code private method for the atack check
-	private void AttackCheck()
-	{
-		if (Input.GetMouseButton(0))
-		{
-			Debug.Log("PC attack");
-			plA.Attack();
-		}
-	}
+    //Auxiliary key code private method for the atack check
+    private void AttackCheck()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            Debug.Log("PC attack");
+            plA.Attack();
+        }
+    }
 
 
 
