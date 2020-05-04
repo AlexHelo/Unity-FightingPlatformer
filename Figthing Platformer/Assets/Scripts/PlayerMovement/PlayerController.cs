@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 {
     //Components used for the main player
     SpriteRenderer spriteRenderer;
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
     public Collision coll;
 
     //Public values for all the movement used in the code
@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
     private Animator an;
     //Attack Script
     private PlayerAttack plA;
-
+    public Vector2 dir;
 
 
     // Start is called before the first frame update
@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
 		 */
 
         //Get the vector for the movement pressed and call the walk method
-        Vector2 dir = new Vector2(x, y);
+        dir = new Vector2(x, y);
         Walk(dir);
         //key code Better Jumping
         if (Input.GetKeyDown(KeyCode.W) && numJumps > 0 && !coll.onWall)
