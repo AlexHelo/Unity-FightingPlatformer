@@ -73,4 +73,12 @@ public class CurrenHealth : MonoBehaviour
             
         }
     }
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+		if(collision.gameObject.tag == "DeadZone")
+		{
+			currenTHealth = 0;
+			CheckHealth();
+		}
+	}
 }

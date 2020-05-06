@@ -1,30 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 /*
- *  GLOSARY:
- *		A) INSTANCE VALUES
- *			1) COMPONETS
- *			2) MOVEMENT VALUES
- *			3) JUMP COUNTERS
- *			4) BOOLEANS
- *			5) GAME OBJECTS, ANIMATOR AND SCRIPTS
- *	
- *		B) START METHOD
- *		
- *		C) UPDATE METHOD
- *			1) MOVEMENT GET AXIS VALUES
- *			2) KEY CODES
- *			3) VELOCITIY SCENARIOS
- *			4) ANIMATIONS
- *		
- *		D) MOVEMENT METHODS
- *		
- *		E) IENUMERATORS
- *		
- *		F) AUXILIARY METHODS
- * 
- */
+*  GLOSARY:
+*		A) INSTANCE VALUES
+*			1) COMPONETS
+*			2) MOVEMENT VALUES
+*			3) JUMP COUNTERS
+*			4) BOOLEANS
+*			5) GAME OBJECTS, ANIMATOR AND SCRIPTS
+*	
+*		B) START METHOD
+*		
+*		C) UPDATE METHOD
+*			1) MOVEMENT GET AXIS VALUES
+*			2) KEY CODES
+*			3) VELOCITIY SCENARIOS
+*			4) ANIMATIONS
+*		
+*		D) MOVEMENT METHODS
+*		
+*		E) IENUMERATORS
+*		
+*		F) AUXILIARY METHODS
+* 
+*/
 
 public class PlayerController : MonoBehaviour
 {
@@ -94,7 +95,7 @@ public class PlayerController : MonoBehaviour
 		 *		2) JUMPING
 		 *		3) WALL JUMPING
 		 *		4) WALL GRAB
-		 *		5) LINE 103: DASH
+		 *		5) DASH
 		 */
 
         //Get the vector for the movement pressed and call the walk method
@@ -365,7 +366,20 @@ public class PlayerController : MonoBehaviour
             plA.Attack();
         }
     }
-
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+		if(collision.gameObject.tag == "DeadZone")
+		{
+			Debug.Log("collision");
+			Reload();
+		}
+	}
+	public void Reload()
+	{
+		int scene = SceneManager.GetActiveScene().buildIndex;
+		SceneManager.LoadScene(scene, LoadSceneMode.Single);
+		Time.timeScale = 1;
+	}
 
 
 }
