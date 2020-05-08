@@ -68935,6 +68935,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f1d55073909a6d44bea5c806a14aedb, type: 3}
+--- !u!1 &1928997030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5014669111092518598, guid: 1f273a00f4e37e148a38ba22ddc98093,
+    type: 3}
+  m_PrefabInstance: {fileID: 1130920298}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1928997041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928997030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15fc69e7ae2f1714ea6fb2e846f71d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!4 &1961993788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9117498542204665473, guid: 6f1d55073909a6d44bea5c806a14aedb,
@@ -69652,6 +69671,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GrapplingHookPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916524759566507179, guid: 8c46a25fd56bf8a45a9f84f53f4cf18a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8916524759566507189, guid: 8c46a25fd56bf8a45a9f84f53f4cf18a,
         type: 3}
