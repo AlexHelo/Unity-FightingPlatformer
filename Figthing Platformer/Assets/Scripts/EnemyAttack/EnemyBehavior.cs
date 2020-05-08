@@ -103,11 +103,13 @@ public class EnemyBehavior : MonoBehaviour
         FunStartDazedTime();
 
     }
+	/*
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(currentAttackPos.position, attackRange);
     }
+	*/
     public void CheckDazedTime()
     {
         if (dazedTime <= 0)

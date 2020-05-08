@@ -405,18 +405,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93c37c8ee79d6d2478bf3140e0007f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 30
+  damage: 20
   runspeed: 0
   player: {fileID: 0}
-  maxDist: 2
+  maxDist: 5
   waitTime: 2
   startDazedTime: 1
-  attackRange: 2.5
+  attackRange: 5
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 8192
-  attackPosLeft: {fileID: 7396903723138918477}
-  attackPosRight: {fileID: 7396903722620551160}
+  attackPosLeft: {fileID: 7396903722620551160}
+  attackPosRight: {fileID: 7396903723138918477}
   deadAnimation: {fileID: 7400000, guid: a8f84c4e5a4205b46a2eb7c3ef8c3264, type: 2}
   mana: 0
 --- !u!114 &7396903722574060473
@@ -480,11 +480,11 @@ MonoBehaviour:
   onLeftWall: 0
   wallSide: 0
   sizeX: {x: 1, y: 1}
-  sizeY: {x: 0.3, y: 3.41}
+  sizeY: {x: 0.6, y: 3.41}
   bottomOffset1: {x: 2.2, y: -2.5}
   bottomOffset2: {x: -2.2, y: -2.5}
-  rightOffset: {x: 2.2, y: 0}
-  leftOffset: {x: -2.2, y: 0}
+  rightOffset: {x: -2.2, y: 0}
+  leftOffset: {x: 2.2, y: 0}
 --- !u!114 &6690572436581558573
 MonoBehaviour:
   m_ObjectHideFlags: 0
