@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MaxHealth : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float maxHealth;
     void Start()
     {
         

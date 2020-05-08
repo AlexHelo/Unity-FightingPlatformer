@@ -28,14 +28,22 @@ public class TakeDamagePlayer : MonoBehaviour
 	}
 	public void TakeDamage(float damage,GameObject enemy)
 	{
-		if (enemy.GetComponent<SpriteRenderer>().flipX)
+		if (enemy.GetComponent<SpriteRenderer>().flipX && enemy.tag!="Normal")
 		{
-			rb.AddForce(new Vector2(200f * damage, 100.5f * damage));
+			rb.AddRelativeForce(new Vector2(150f * damage, 80.5f * damage));
 		}
 		else
 		{
-			rb.AddForce(new Vector2(-200f * damage, 100.5f * damage));
+			rb.AddRelativeForce(new Vector2(-150f * damage, 80.5f * damage));
 		}
-		cH.CurrentHealthValue -= damage;
+        if (enemy.GetComponent<SpriteRenderer>().flipX && enemy.tag == "Normal")
+        {
+            rb.AddRelativeForce(new Vector2(150f * damage, 0));
+        }
+        else
+        {
+            rb.AddRelativeForce(new Vector2(150f * damage, 0));
+        }
+        cH.CurrentHealthValue -= damage;
 	}
 }

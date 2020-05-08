@@ -16,23 +16,25 @@ public class CurrenHealth : MonoBehaviour
     private float deadTime;
     private Vector3 scale;
     private bool dead;
+    private MaxHealth mx;
     void Start()
     {
         an = GetComponent<Animator>();
         dead = false;
+        mx = GetComponent<MaxHealth>();
     }
 
     // Update is called once per frame
     private void FixedUpdate()
     {
-        scale = new Vector3(currenTHealth / 100, 1, 1);
+        scale = new Vector3(currenTHealth / mx.maxHealth, 1, 1);
         healthBar.GetComponent<Transform>().localScale = scale;
-        if (currenTHealth < 30)
+        if (currenTHealth < mx.maxHealth*.3)
         {
             healthBarSprite.GetComponent<SpriteRenderer>().color = Color.red;
             
         }
-        else if(currenTHealth<75)
+        else if(currenTHealth< mx.maxHealth * .75)
         {
             healthBarSprite.GetComponent<SpriteRenderer>().color = Color.yellow;
         }
