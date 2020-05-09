@@ -67,6 +67,8 @@ public class PlayerController : MonoBehaviour
     private PlayerAttack plA;
     public Vector2 dir;
 
+    public CheckpointCheck cc;
+
 
     // Start is called before the first frame update
     void Start()
@@ -76,6 +78,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         plA = GetComponent<PlayerAttack>();
         CurrentAttackPos = attackPosMeleeRight;
+        cc = GameObject.FindGameObjectWithTag("CC").GetComponent<CheckpointCheck>();
+        transform.position = cc.lastCheckpoint;
     }
 
     // Update is called once per frame
@@ -223,6 +227,7 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity += dir.normalized * dashSpeed;
         StartCoroutine(DashWait());
+        SoundScript.PlaySound("dash");
     }
     //private method for jumping
     private void Jump(Vector2 dir)
@@ -230,7 +235,7 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.velocity += dir * jumpVelocity;
-        Debug.Log("DO " + rb.velocity);
+        SoundScript.PlaySound("jump");
 
     }
     // private method for walk 
@@ -272,11 +277,13 @@ public class PlayerController : MonoBehaviour
     //private method for wall jumping
     private void WallJump()
     {
+
         StopCoroutine(DisableMovement(0));
         StartCoroutine(DisableMovement(.1f));
         Vector2 wallDir = coll.onRightWall ? Vector2.left : Vector2.right;
         Jump(Vector2.up + wallDir);
         wallJumped = true;
+        SoundScript.PlaySound("jump");
     }
 
 
@@ -366,20 +373,20 @@ public class PlayerController : MonoBehaviour
             plA.Attack();
         }
     }
-	private void OnCollisionEnter2D(Collision2D collision)
-	{
-		if(collision.gameObject.tag == "DeadZone")
-		{
-			Debug.Log("collision");
-			Reload();
-		}
-	}
-	public void Reload()
-	{
-		int scene = SceneManager.GetActiveScene().buildIndex;
-		SceneManager.LoadScene(scene, LoadSceneMode.Single);
-		Time.timeScale = 1;
-	}
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "DeadZone")
+        {
+            Debug.Log("collision");
+            Reload();
+        }
+    }
+    public void Reload()
+    {
+        int scene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(scene, LoadSceneMode.Single);
+        Time.timeScale = 1;
+    }
 
 
 }

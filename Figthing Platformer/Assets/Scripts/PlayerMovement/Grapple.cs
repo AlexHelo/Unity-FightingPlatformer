@@ -54,7 +54,7 @@ public class Grapple : MonoBehaviour
 
     void StartGrapple()
     {
-        Debug.Log("Chambing");
+
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(rb.position, mousePos, 10, whatIsGrappleable);
 
@@ -73,7 +73,7 @@ public class Grapple : MonoBehaviour
 
 
 
-
+        SoundScript.PlaySound("grapple");
         rope = gameObject.AddComponent<DistanceJoint2D>();
         rope.enableCollision = true;
         rope.connectedAnchor = closest.transform.position;
