@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CheckpointCheck : MonoBehaviour
 {
@@ -22,6 +23,9 @@ public class CheckpointCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+		if(SceneManager.GetActiveScene().name != "firstLevel")
+		{
+			Destroy(gameObject);
+		}
     }
 }

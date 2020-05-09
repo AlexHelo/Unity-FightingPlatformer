@@ -5,14 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class SavePointFirstLevel : MonoBehaviour
 {
+	public GameObject chP;
+	public CheckpointCheck cc;
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+		cc = GameObject.FindGameObjectWithTag("CC").GetComponent<CheckpointCheck>();
+	}
 
-    // Update is called once per frame
-    void Update()
+	// Update is called once per frame
+	void Update()
     {
         
     }
@@ -20,6 +22,7 @@ public class SavePointFirstLevel : MonoBehaviour
 	{
 		if (collision.gameObject.tag == "Player")
 		{
+			Destroy(chP);
 			SceneManager.LoadScene("RuinsScene");
 		}
 	}
