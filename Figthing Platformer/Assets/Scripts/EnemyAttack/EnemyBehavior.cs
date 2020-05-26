@@ -48,25 +48,30 @@ public class EnemyBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        CheckDazedTime();
-        playerTrans = player.GetComponent<Transform>();
+        try
+        {
+            CheckDazedTime();
+            playerTrans = player.GetComponent<Transform>();
 
-        if (currentTime < waitTime)
-        {
-            currentTime += 1 * Time.deltaTime;
-        }
-        if (currentTime >= waitTime)
-        {
-            currentTime = 0;
-        }
-        if (Vector3.Distance(transform.position, playerTrans.position) <= maxDist)
-        {
-            if (currentTime == 0)
+            if (currentTime < waitTime)
             {
-                Atacar();
+                currentTime += 1 * Time.deltaTime;
             }
-            
+            if (currentTime >= waitTime)
+            {
+                currentTime = 0;
+            }
+            if (Vector3.Distance(transform.position, playerTrans.position) <= maxDist)
+            {
+                if (currentTime == 0)
+                {
+                    Atacar();
+                }
+
+            }
+        }catch(MissingReferenceException e)
+        {
+
         }
     }
     public void CheckHealth()

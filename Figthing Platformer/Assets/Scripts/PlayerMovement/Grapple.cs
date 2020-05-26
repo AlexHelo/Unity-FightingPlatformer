@@ -110,7 +110,7 @@ public class Grapple : MonoBehaviour
         float closest = 5; //add your max range here
         GameObject closestObject = null;
 
-        Debug.Log(blocks[0].transform.position);
+        //Debug.Log(blocks[0].transform.position);
 
         for (int i = 0; i < blocks.Length; i++)  //list of gameObjects to search through
         {

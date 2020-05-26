@@ -121,7 +121,7 @@ public class PlayerController : MonoBehaviour
         // key code for wall grab
         if (Input.GetKey(KeyCode.E) && coll.onWall)
         {
-            Debug.Log("WALL GRAB");
+            //Debug.Log("WALL GRAB");
             rb.velocity = new Vector2(rb.velocity.x, 0);
         }
         // key code for dash
@@ -369,7 +369,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            Debug.Log("PC attack");
+            //Debug.Log("PC attack");
             plA.Attack();
         }
     }
@@ -377,7 +377,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "DeadZone")
         {
-            Debug.Log("collision");
+            //Debug.Log("collision");
             Reload();
         }
     }

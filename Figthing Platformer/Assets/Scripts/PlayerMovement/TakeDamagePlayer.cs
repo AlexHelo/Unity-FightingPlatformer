@@ -30,19 +30,25 @@ public class TakeDamagePlayer : MonoBehaviour
 	{
 		if (enemy.GetComponent<SpriteRenderer>().flipX && enemy.tag!="Normal")
 		{
-			rb.AddRelativeForce(new Vector2(150f * damage, 80.5f * damage));
+            //Debug.Log("Pop");
+            rb.AddRelativeForce(new Vector2(150f * damage, 80.5f * damage));
 		}
-		else
-		{
-			rb.AddRelativeForce(new Vector2(-150f * damage, 80.5f * damage));
+		else if(!enemy.GetComponent<SpriteRenderer>().flipX && enemy.tag != "Normal") 
+        { 
+            //Debug.Log("Kor");
+            rb.AddRelativeForce(new Vector2(-150f * damage, 80.5f * damage));
 		}
-        if (enemy.GetComponent<SpriteRenderer>().flipX && enemy.tag == "Normal")
+
+
+        if (!enemy.GetComponent<SpriteRenderer>().flipX && enemy.tag == "Normal")
         {
-            rb.AddRelativeForce(new Vector2(150f * damage, 0));
+            //Debug.Log("Hey");
+            rb.AddRelativeForce(new Vector2(60 * damage, damage*20));
         }
-        else
+        else if(enemy.GetComponent<SpriteRenderer>().flipX && enemy.tag == "Normal")
         {
-            rb.AddRelativeForce(new Vector2(150f * damage, 0));
+            //Debug.Log("Heya");
+            rb.AddRelativeForce(new Vector2(60 * -damage, damage * 20));
         }
         cH.CurrentHealthValue -= damage;
 	}

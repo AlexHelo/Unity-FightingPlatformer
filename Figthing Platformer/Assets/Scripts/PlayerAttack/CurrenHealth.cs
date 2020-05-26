@@ -48,7 +48,7 @@ public class CurrenHealth : MonoBehaviour
         }
         CheckHealth();
     }
-    private void CheckHealth()
+    public void CheckHealth()
     {
         if (!dead)
         {

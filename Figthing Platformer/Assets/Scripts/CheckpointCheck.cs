@@ -25,7 +25,7 @@ public class CheckpointCheck : MonoBehaviour
     {
 		if(SceneManager.GetActiveScene().name != "firstLevel")
 		{
-			Destroy(gameObject);
+			//Destroy(gameObject);
 		}
     }
 }

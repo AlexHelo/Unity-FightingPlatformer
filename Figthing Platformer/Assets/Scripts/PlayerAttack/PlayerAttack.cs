@@ -117,18 +117,18 @@ public class PlayerAttack : MonoBehaviour
                     if (attackNum == 1)
                     {
 						enemiesToDamage = AttackNumber(enemiesToDamage, enemiesToDamage1, -5f, -1.2f,0f,attackRange);
-						Debug.Log("attack 1");
+						//Debug.Log("attack 1");
 					}
 					//if we are on the SECOND attack
                     if (attackNum == 2)
                     {
-						Debug.Log("attack 2");
+						//Debug.Log("attack 2");
 						enemiesToDamage1 = AttackNumber(enemiesToDamage, enemiesToDamage1, 15f, -1.2f, 0f,attackRange2);
 					}
 					//if we are on the THIRD attack
                     if (attackNum == 3)
                     {
-						Debug.Log("attack 3");
+						//Debug.Log("attack 3");
 						enemiesToDamage2 = AttackNumber(enemiesToDamage, enemiesToDamage1, 22f, -1.2f, 0f,attackRange3);
 
 					}
@@ -138,22 +138,22 @@ public class PlayerAttack : MonoBehaviour
 				//if you are hitting an enemy
 				if (enemiesToDamage != null)
 				{
-					Debug.Log("Hitbox 1");
+					//Debug.Log("Hitbox 1");
 					EnemyHitBox(enemiesToDamage, attacked);
 				} else
 				{
-					Debug.Log("No hitbox 1");
+					//Debug.Log("No hitbox 1");
 				}
 				//same as the above, with differet hitbox
 				if (enemiesToDamage1 != null)
 				{
-					Debug.Log("Hitbox 2");
+					//Debug.Log("Hitbox 2");
 					EnemyHitBox(enemiesToDamage1, attacked);
 				}
 				//same as above with different hitbox
 				if (enemiesToDamage2 != null)
                 {
-					Debug.Log("Hitbox 3");
+					//Debug.Log("Hitbox 3");
 					EnemyHitBox(enemiesToDamage2, attacked);
                 }                
                 attacked = true;
@@ -171,7 +171,7 @@ public class PlayerAttack : MonoBehaviour
 	//IEnumerator to determine the time between attacks
     IEnumerator AttackWait(float seconds)
     {
-        Debug.Log("running");
+        //Debug.Log("running");
         yield return new WaitForSeconds(seconds);
 
     }
@@ -197,16 +197,16 @@ public class PlayerAttack : MonoBehaviour
 	//Auxiliary private method to apply knockback
 	private void CheckKnockBack(int i, Collider2D[] enemiesToDamage)
     {
-		Debug.Log("Enemy name "+ enemiesToDamage[i].gameObject.name);
-        Debug.Log(force);
+		//Debug.Log("Enemy name "+ enemiesToDamage[i].gameObject.name);
+        //Debug.Log(force);
         if (pC.GetAttackPos())
         {
-            Debug.Log("Derecha");
+            //Debug.Log("Derecha");
             enemiesToDamage[i].GetComponent<Rigidbody2D>().AddForce(new Vector2(1, 2)*  force);
         }
         else
         {
-            Debug.Log("Izquierda");
+            //Debug.Log("Izquierda");
             enemiesToDamage[i].GetComponent<Rigidbody2D>().AddForce(new Vector2(-1, 2) * force);
         }
         
