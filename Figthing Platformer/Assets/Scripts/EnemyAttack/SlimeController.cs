@@ -9,19 +9,24 @@ public class SlimeController : MonoBehaviour
 	SpriteRenderer spriteRenderer;
 
 	public float moveSpeed;
+    public bool moving;
 
 	// Start is called before the first frame update
 	void Start()
     {
 		rb = GetComponent<Rigidbody2D>();
 		spriteRenderer = GetComponent<SpriteRenderer>();
+        moving = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //rb.velocity = Vector3.right * moveSpeed * Time.deltaTime;
-        transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
+        if (moving)
+        {
+            //rb.velocity = Vector3.right * moveSpeed * Time.deltaTime;
+            transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
+        }
 
 		if ((coll.onLeftWall && spriteRenderer.flipX == false) || (!coll.onGroundL && spriteRenderer.flipX == false))
 		{

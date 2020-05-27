@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 6690572436581558573}
   m_Layer: 10
   m_Name: BlueBoss
-  m_TagString: Untagged
+  m_TagString: Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 7396903722071764178}
   healthBarSprite: {fileID: 7396903722310581354}
-  currenTHealth: 1000
+  currenTHealth: 800
   an: {fileID: 0}
   deadTime: 0.5
 --- !u!70 &7396903722574060454
@@ -405,7 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93c37c8ee79d6d2478bf3140e0007f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 15
   runspeed: 0
   player: {fileID: 0}
   maxDist: 5
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fc69e7ae2f1714ea6fb2e846f71d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000
+  maxHealth: 800
 --- !u!1 &7396903722620551161
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,7 +522,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7396903722620551161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.085, y: 0, z: 0}
+  m_LocalPosition: {x: 0.085, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7396903722574060451}
@@ -552,7 +552,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7396903723138918478}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.085, y: 0, z: 0}
+  m_LocalPosition: {x: -0.085, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7396903722574060451}

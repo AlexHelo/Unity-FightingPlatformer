@@ -30,33 +30,39 @@ public class EnemyFollow : MonoBehaviour
     private void FollowPlayer()
     {
         float slime = transform.position.x - target.transform.position.x;
-        try { 
+        try {
+            if (gameObject.name!="Golem") {
 
-        if (GetComponent<SpriteRenderer>().flipX)
-        {
-            if (slime < 0)
-            {
-                transform.position = Vector2.MoveTowards(transform.position, target.position, GetComponent<SlimeController>().moveSpeed * Time.deltaTime);
+                if (GetComponent<SpriteRenderer>().flipX)
+                {
+                    if (slime < 0)
+                    {
+                        transform.position = Vector2.MoveTowards(transform.position, target.position, GetComponent<SlimeController>().moveSpeed * Time.deltaTime);
+                    }
+                    else
+                    {
+                        //Debug.Log("flip true else");
+                    }
+
+                }
+
+                if (!GetComponent<SpriteRenderer>().flipX)
+                {
+                    if (slime > 0)
+                    {
+                        transform.position = Vector2.MoveTowards(transform.position, target.position, -GetComponent<SlimeController>().moveSpeed * Time.deltaTime);
+                    }
+                    else
+                    {
+                        //Debug.Log("flip false else");
+                    }
+
+                }
             }
             else
             {
-                //Debug.Log("flip true else");
-            }
 
-        }
-
-        if (!GetComponent<SpriteRenderer>().flipX)
-        {
-            if (slime > 0)
-            {
-                transform.position = Vector2.MoveTowards(transform.position, target.position, -GetComponent<SlimeController>().moveSpeed * Time.deltaTime);
             }
-            else
-            {
-                //Debug.Log("flip false else");
-            }
-
-        }
         }
         catch (MissingReferenceException e)
         {

@@ -85,31 +85,34 @@ public class FlyingEnemyBehavior : MonoBehaviour
 
                 Destroy(this.gameObject, deadAnimationTime);
                 animator.SetTrigger("Dead");
+                animator.SetBool("Dead 0", true);
                 dead = true;
             }
         }
     }
     public void Atacar()
     {
-        if (!GetComponent<SpriteRenderer>().flipX)
+        if (!dead)
         {
-            currentAttackPos = attackPosRight;
-        }
-        else
-        {
-            currentAttackPos = attackPosLeft;
-        }
+            if (!GetComponent<SpriteRenderer>().flipX)
+            {
+                currentAttackPos = attackPosRight;
+            }
+            else
+            {
+                currentAttackPos = attackPosLeft;
+            }
 
-        Rigidbody.velocity = new Vector2(0f, 0f);
-        animator.SetTrigger("Attacking");
-        Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(currentAttackPos.position, attackRange, whatIsEnemies);
-        for (int i = 0; i < enemiesToDamage.Length; i++)
-        {
-            enemiesToDamage[i].GetComponent<TakeDamagePlayer>().TakeDamage(damage, this.gameObject);
+            Rigidbody.velocity = new Vector2(0f, 0f);
+            animator.SetTrigger("Attacking");
+            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(currentAttackPos.position, attackRange, whatIsEnemies);
+            for (int i = 0; i < enemiesToDamage.Length; i++)
+            {
+                enemiesToDamage[i].GetComponent<TakeDamagePlayer>().TakeDamage(damage, this.gameObject);
+            }
+            //ataque = true;
+            FunStartDazedTime();
         }
-        //ataque = true;
-        FunStartDazedTime();
-
     }
     /*
     private void OnDrawGizmosSelected()

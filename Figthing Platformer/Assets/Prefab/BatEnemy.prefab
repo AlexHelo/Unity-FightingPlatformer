@@ -432,7 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1177b9defd8ecef40a340631f42140ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   maxDist: 8
   minDist: 1.8
   speedFollow: 3.8
@@ -500,7 +500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coll: {fileID: 0}
-  moveSpeed: 131.09
+  moveSpeed: 149.52
   moving: 0
 --- !u!114 &6880720070996069933
 MonoBehaviour:
