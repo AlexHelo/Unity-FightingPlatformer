@@ -29,12 +29,12 @@ public class CurrenHealth : MonoBehaviour
     {
         scale = new Vector3(currenTHealth / mx.maxHealth, 1, 1);
         healthBar.GetComponent<Transform>().localScale = scale;
-        if (currenTHealth < mx.maxHealth*.3)
+        if (currenTHealth < mx.maxHealth * .3)
         {
             healthBarSprite.GetComponent<SpriteRenderer>().color = Color.red;
-            
+
         }
-        else if(currenTHealth< mx.maxHealth * .75)
+        else if (currenTHealth < mx.maxHealth * .75)
         {
             healthBarSprite.GetComponent<SpriteRenderer>().color = Color.yellow;
         }
@@ -42,7 +42,7 @@ public class CurrenHealth : MonoBehaviour
         {
             healthBarSprite.GetComponent<SpriteRenderer>().color = Color.green;
         }
-        if (currenTHealth <=0)
+        if (currenTHealth <= 0)
         {
             currenTHealth = 0;
         }
@@ -54,17 +54,22 @@ public class CurrenHealth : MonoBehaviour
         {
             if (currenTHealth <= 0)
             {
-                dead=true;
+                dead = true;
                 an.SetTrigger("Dead");
-                
-                Destroy(this.gameObject,deadTime);
+
+                Destroy(this.gameObject, deadTime);
+
+                if (gameObject.tag == "Player")
+                {
+                    GetComponent<PlayerController>().Reload();
+                }
             }
         }
     }
     IEnumerator Die(float time)
     {
         yield return new WaitForSeconds(time);
-        
+
     }
     public float CurrentHealthValue
     {
@@ -72,15 +77,15 @@ public class CurrenHealth : MonoBehaviour
         set
         {
             currenTHealth = value;
-            
+
         }
     }
-	private void OnCollisionEnter2D(Collision2D collision)
-	{
-		if(collision.gameObject.tag == "DeadZone")
-		{
-			currenTHealth = 0;
-			CheckHealth();
-		}
-	}
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "DeadZone")
+        {
+            currenTHealth = 0;
+            CheckHealth();
+        }
+    }
 }

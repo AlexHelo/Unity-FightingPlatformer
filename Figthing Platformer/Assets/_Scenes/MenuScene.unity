@@ -485,7 +485,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The Courageous Undertaking Milestone
+  m_Text: The Courageous UndertaKing Milestone
 --- !u!222 &537600369
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -549,12 +549,12 @@ PrefabInstance:
     - target: {fileID: 5014669111092518595, guid: 1f273a00f4e37e148a38ba22ddc98093,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.11
+      value: -0.53
       objectReference: {fileID: 0}
     - target: {fileID: 5014669111092518595, guid: 1f273a00f4e37e148a38ba22ddc98093,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.24
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5014669111092518595, guid: 1f273a00f4e37e148a38ba22ddc98093,
         type: 3}
