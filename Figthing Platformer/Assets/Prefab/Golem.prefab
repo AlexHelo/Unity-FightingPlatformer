@@ -519,7 +519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0aee7ffda88c941ad9d99ff2569251, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 2
 --- !u!114 &1828352747358208020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,8 +536,8 @@ MonoBehaviour:
   runspeed: 3
   player: {fileID: 0}
   maxDist: 2
-  waitTime: 1.5
-  startDazedTime: 1.5
+  waitTime: 1
+  startDazedTime: 1
   attackRange: 2
   whatIsEnemies:
     serializedVersion: 2

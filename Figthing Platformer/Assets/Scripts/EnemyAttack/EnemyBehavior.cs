@@ -41,6 +41,7 @@ public class EnemyBehavior : MonoBehaviour
 		playerTrans = player.GetComponent<Transform>();
 
         deadAnimationTime=deadAnimation.length;
+        GetComponent<SlimeController>().moving = true;
 
 
     }
@@ -65,10 +66,20 @@ public class EnemyBehavior : MonoBehaviour
             {
                 if (currentTime == 0)
                 {
+                    GetComponent<SlimeController>().moving = false;
                     Atacar();
                 }
+            
+                else if (currentTime >= 0)
+                {
+                    
+                }
+                else
+                {
+                    GetComponent<SlimeController>().moving = true;
+                }
 
-            }
+        }
         }catch(MissingReferenceException e)
         {
 
@@ -123,6 +134,7 @@ public class EnemyBehavior : MonoBehaviour
                 enemiesToDamage[i].GetComponent<TakeDamagePlayer>().TakeDamage(damage, this.gameObject);
             }
             //ataque = true;
+            GetComponent<SlimeController>().moving = true;
             FunStartDazedTime();
         }
     }

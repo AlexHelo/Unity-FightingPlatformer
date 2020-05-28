@@ -55,12 +55,12 @@ public class PlayerController : MonoBehaviour
     public bool isDashing;
     public bool hasDashed;
     public bool groundTouch;
-    private bool attackPos;
+    private bool attackPos,spellPos;
 
     //Game objects for the left position and right position of the hitbox
-    public GameObject attackPosMeleeLeft, attackPosMeleeRight;
+    public GameObject attackPosMeleeLeft, attackPosMeleeRight,spellPosLeft,spellPosRight,fireball;
     //Game object determining the side his facing
-    private GameObject CurrentAttackPos;
+    private GameObject CurrentAttackPos,CurrentSpellPos;
     //Animators used for the movements
     private Animator an;
     //Attack Script
@@ -130,6 +130,11 @@ public class PlayerController : MonoBehaviour
             if (xRaw != 0 || yRaw != 0)
                 Dash(xRaw, yRaw);
             numJumps = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            //Debug.Log("Spell");
+            InSpell();
         }
         /*
 		 * 
@@ -264,11 +269,13 @@ public class PlayerController : MonoBehaviour
             {
                 spriteRenderer.flipX = true;
                 flipAttack(false);
+                flipSpell(false);
             }
             else if (dir.x > 0)
             {
                 spriteRenderer.flipX = false;
                 flipAttack(true);
+                flipSpell(false);
             }
         }
 
@@ -284,6 +291,23 @@ public class PlayerController : MonoBehaviour
         Jump(Vector2.up + wallDir);
         wallJumped = true;
         SoundScript.PlaySound("jump");
+    }
+    private void InSpell()
+    {
+        GameObject f;
+        an.SetTrigger("Spell");
+        if (GetComponent<SpriteRenderer>().flipX)
+        {
+            f=Instantiate(fireball, spellPosLeft.GetComponent<Transform>().position, spellPosLeft.GetComponent<Transform>().rotation);
+            f.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else if(!GetComponent<SpriteRenderer>().flipX)
+        {
+            f=Instantiate(fireball, spellPosRight.GetComponent<Transform>().position, spellPosRight.GetComponent<Transform>().rotation);
+            f.GetComponent<SpriteRenderer>().flipX = false;
+        }
+        
+        
     }
 
 
@@ -333,9 +357,10 @@ public class PlayerController : MonoBehaviour
     /*
 	 * AUXILIARY METHODS FOR THE SCRIPTS
 	 *		1) FLIP ATTACK 
-	 *		2) GET CURRENT ATTACK POSITION
-	 *		3) GET ATTACK POSITION
-	 *		4) KEY CODE FOR ATTACK CKECK
+     *		2) FLIP SPELL 
+	 *		3) GET CURRENT ATTACK POSITION
+	 *		4) GET ATTACK POSITION
+	 *		5) KEY CODE FOR ATTACK CKECK
 	 * 
 	 */
 
@@ -351,6 +376,21 @@ public class PlayerController : MonoBehaviour
         {
             CurrentAttackPos = attackPosMeleeLeft;
             attackPos = false;
+        }
+    }
+    private void flipSpell(bool t)
+    {
+        if (t)
+        {
+            //Debug.Log("Right");
+            CurrentSpellPos = spellPosRight;
+            spellPos = true;
+        }
+        else if(!t)
+        {
+            //Debug.Log("Left");
+            CurrentSpellPos = spellPosLeft;
+            spellPos = false;
         }
     }
     //Auxiliary public method to get the current attack position 

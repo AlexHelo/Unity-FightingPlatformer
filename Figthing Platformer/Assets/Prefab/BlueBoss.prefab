@@ -458,6 +458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coll: {fileID: 7396903722574060476}
   moveSpeed: 1.5
+  moving: 0
 --- !u!114 &7396903722574060476
 MonoBehaviour:
   m_ObjectHideFlags: 0

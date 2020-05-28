@@ -24,6 +24,10 @@ public class EnemyFollow : MonoBehaviour
             {
                 FollowPlayer();
             }
+            else
+            {
+                GetComponent<SlimeController>().moving = true;
+            }
         }catch(MissingReferenceException e) { }
 			
 	}
@@ -31,7 +35,8 @@ public class EnemyFollow : MonoBehaviour
     {
         float slime = transform.position.x - target.transform.position.x;
         try {
-            if (gameObject.name!="Golem") {
+            //Debug.Log(slime);
+            if (gameObject.name!="Golem" && gameObject.name!="HammerBoss") {
 
                 if (GetComponent<SpriteRenderer>().flipX)
                 {
@@ -59,8 +64,36 @@ public class EnemyFollow : MonoBehaviour
 
                 }
             }
-            else
+            else if (gameObject.name == "HammerBoss" || gameObject.name == "Golem")
             {
+                //Debug.Log("G");
+                if (!GetComponent<SpriteRenderer>().flipX)
+                {
+                    if (slime < 0)
+                    {
+                        //GetComponent<SlimeController>().moving=false;
+                        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+                    }
+                    else
+                    {
+                        //Debug.Log("flip true else");
+                    }
+
+                }
+
+                else if (GetComponent<SpriteRenderer>().flipX)
+                {
+                    if (slime > 0)
+                    {
+                        //GetComponent<SlimeController>().moving = false;
+                        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+                    }
+                    else
+                    {
+                        //Debug.Log("flip false else");
+                    }
+
+                }
 
             }
         }

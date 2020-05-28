@@ -219,8 +219,8 @@ public class PlayerAttack : MonoBehaviour
 		for (int i = 0; i < enemiesToDamage.Length; i++)
 		{
 			//Apply knockback
-			CheckKnockBack(i, enemiesToDamage);
-			enemiesToDamage[i].GetComponent<TakeDamageEnemy>().TakeDamage(damage);
+			//CheckKnockBack(i, enemiesToDamage);
+			enemiesToDamage[i].GetComponent<TakeDamageEnemy>().TakeDamage(damage,this.gameObject);
 			// if you attack, dont apply again
 			if (attacked)
 			{
