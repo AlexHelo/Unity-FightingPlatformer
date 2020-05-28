@@ -23,6 +23,7 @@ public class SavePointFirstLevel : MonoBehaviour
 		if (collision.gameObject.tag == "Player")
 		{
 			Destroy(chP);
+			Destroy(cc.gameObject);
 			SceneManager.LoadScene("RuinsScene");
 		}
 	}
